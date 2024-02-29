@@ -7,33 +7,37 @@
     <link rel="icon" href="./assets/logo_lamdeptugoc.ico" type="image/gif" sizes="16x16">
     <title>Lam dep tu goc</title>
     <link href="./output.css" type="text/css" rel="stylesheet" />
+    <script src="./main.js" type="text/javascript" async></script>
 </head>
 
 <body>
     <div id="root">
         <div class="content-wrapper font-Roboto max-w-screen-2xl text-base mx-auto px-8 bg-slate-200">
             <!-- Header -->
-            <header class="py-6 mx-10">
-                <nav class="flex flex-row justify-between items-center">
+            <header class="p-6 mx-auto">
+                <nav class="flex flex-row justify-between items-center relative">
                     <!-- Logo -->
-                    <div class="logo basis-2/6">
+                    <div class="logo lg:basis-1/7 basis-1/7 flex justify-center items-center ">
                         <img src="/assets/logo_lamdeptugoc.png" alt="logo" width="80" height="143"
                             class="cursor-pointer" />
                     </div>
                     <!-- 4 tags -->
-                    <ul
-                        class="basis-3/6 hidden lg:flex lg:items-center lg:justify-end gap-8 uppercase  text-gray-600 font-medium">
+                    <ul id="ct-top-menu"
+                        class="lg:basis-4/7 hidden lg:flex  items-center lg:justify-end gap-8 uppercase  text-gray-600 font-medium">
                         <li class="ct-top-menu-item">
                             <a href=""></a>Giới thiệu
                         </li>
                         <li class="ct-top-menu-item"><a href=""></a>Khóa đào tạo</li>
                         <li class="ct-top-menu-item"><a href=""></a>Đội ngũ chuyên gia</li>
                         <li class="ct-top-menu-item"><a href=""></a>Hình ảnh</li>
+
+
                     </ul>
-                    <!-- Hotline -->
+
+                    <!-- Contact -->
                     <ul
-                        class="basis-3/6 flex justify-end  lg:justify-start items-center ml-16 uppercasetext-gray-500 font-medium gap-8 ">
-                        <!-- So Hotline -->
+                        class="lg:basis-2/7 hidden lg:flex justify-end  lg:justify-start items-center ml-16 uppercasetext-gray-500 font-medium gap-8 ">
+                        <!-- Hotline -->
                         <li><a href="" class="flex items-center">
                                 <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
                                     stroke-width="1.5" stroke="currentColor" class="ct-icon">
@@ -44,7 +48,7 @@
                                 <span class="mx-2">Số hotline</span>
                             </a></li>
                         <!-- Dang ky ngay -->
-                        <li><a href="" class="flex items-center">
+                        <li class=""><a href="" class="flex items-center">
                                 <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
                                     stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
                                     <path stroke-linecap="round" stroke-linejoin="round"
@@ -52,11 +56,13 @@
                                 </svg>
                                 <span class="mx-2">Đăng ký ngay</span>
                             </a></li>
+                        <!-- So Hotline -->
+
                     </ul>
                     <!-- Menu Responsive -->
-                    <div class="basis-1/6 lg:hidden flex items-center cursor-pointer px-2 sm:px-4">
-                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
-                            stroke="currentColor" class="ct-icon">
+                    <div class="basis-4/7 lg:hidden flex  justify-end items-center cursor-pointer px-2 sm:px-4">
+                        <svg id="ct-toggle-top-menu-icon" xmlns="http://www.w3.org/2000/svg" fill="none"
+                            viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="ct-icon">
                             <path stroke-linecap="round" stroke-linejoin="round"
                                 d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
                         </svg>
