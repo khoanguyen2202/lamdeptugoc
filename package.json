@@ -1,0 +1,19 @@
+{
+  "name": "lamdeptugoc",
+  "version": "1.0.0",
+  "description": "lamdeptugoc.vn",
+  "main": "index.js",
+  "scripts": {
+    "build:css": "tailwindcss -i ./src/input.css -o ./public/output.css --watch",
+    "start:dev": "live-server public"
+  },
+  "keywords": [],
+  "author": "lamdeptugoc.vn",
+  "license": "ISC",
+  "devDependencies": {
+    "tailwindcss": "^3.4.1"
+  },
+  "dependencies": {
+    "live-server": "^1.2.2"
+  }
+}
