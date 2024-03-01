@@ -16,5 +16,9 @@
 }
 
 .ct-icon {
-  @apply w-5 h-5 inline-block;
+  @apply w-6 h-6 inline-block;
+}
+
+.ct-footer-icon-text {
+  @apply flex items-center
 }
