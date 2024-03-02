@@ -4,7 +4,7 @@
 @tailwind utilities;
 /* ct = custom */
 .ct-top-menu-expanded {
-  @apply absolute top-28 z-50 w-full bg-white animate-slideDown;
+  @apply absolute top-28 z-50 w-full bg-white border-2 border-solid border-gray-300 animate-slideDown;
 }
 
 .ct-top-menu-item {
@@ -21,4 +21,14 @@
 
 .ct-footer-icon-text {
   @apply flex items-center
+}
+
+.ct-subheadline{
+  @apply flex justify-center items-center mb-24;
+}
+.ct-subheadline-deco-line{
+  @apply w-8 h-px bg-gray-600;
+}
+.ct-subheadline-label{
+  @apply uppercase mx-4 tracking-widest text-gray-600 font-medium text-[13px] text-center;
 }
