@@ -1,0 +1,167 @@
+<div class="ct-subheadline">
+            <div class="ct-subheadline-deco-line"></div>
+            <div class="ct-subheadline-label">Câu chuyện về Cộng đồng Làm Đẹp Từ Gốc</div>
+            <div class="ct-subheadline-deco-line"></div>
+          </div>
+
+          <div class="story flex flex-col lg:flex-row justify-center items-center gap-8 lg:gap-4 w-[95%] lg:w-[65%] mx-auto mb-10">
+           <div class="basis-1/2">
+            <video autoplay loop muted class="w-full h-full object-cover min-h-[500px]">
+              <source src="./video/pexels_videos_3436 (1080p).mp4" type="video/mp4">
+            </video>
+           </div>
+              <div
+                class="basis-1/2 text-center lg:text-left lg:pl-6">
+                <div class="text-3xl leading-10 mb-6 font-sans">
+                  Câu chuyện về Cộng đồng Làm Đẹp Từ Gốc
+                </div>
+                <div class="text-gray-600 leading-7 mb-6">
+                  <div>"Tôi là Cao Thị Lệ Thủy, Nhà Sáng Lập bộ môn Làm Đẹp Từ Gốc. (LĐTG) </div>
+Tôi chỉ là người không quản sự khó khăn, không ngại việc lớn; góp sức và tự nhận lấy việc "Nhà sáng lập" này cho cộng đồng LĐTG có đầy đủ pháp lý khai sinh. 
+
+Đã 16 đam mê và cống hiến, tôi luôn mong mỏi tìm được lối đi vững chắc cho ngành Spa. Chắc cái máu " nhà quê " nên chỉ thích những gì thiên nhiên, những gì từ gốc. Trong hành trình làm nghề tôi luôn nung nấu tìm giải pháp làm đẹp tự nhiên, trẻ khoẻ và sau này hình tướng ấy mỗi ngày mỗi lớn. Đến thời điểm này, thì đã lên " tầm " muốn tìm giải pháp giúp phụ nữ Trẻ - Khoẻ - Đẹp, cân bằng Thân - Tâm - Trí, nâng cấp hạnh phúc, phát triển bản thân, và xa hơn nữa ... giấc mơ về sự cống hiến, góp sức nâng tầm ngành làm đẹp Việt Nam vươn ra Thế giới... Đó là lý do Làm Đẹp Từ Gốc ra đời. 
+
+
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="ct-subheadline">
+            <div class="ct-subheadline-deco-line"></div>
+            <div class="ct-subheadline-label">Banner ưu đãi</div>
+            <div class="ct-subheadline-deco-line"></div>
+          </div>
+          <div class="discount w-[95%] lg:w-[65%] mx-auto mb-24">
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-4">
+              <div class="ct-product-card">
+              <div class=" h-[400px] sm:h-[500px] bg-[url('./assets/tiem-botox_2.jpeg')] bg-cover bg-no-repeat bg-center">
+                <a href="#" alt="lamdeptugoc">
+                  <div class="w-full h-full hover:bg-gray-900 hover:bg-opacity-10 hover:transition-all hover:ease-in-out hover:duration-400 relative group">
+                    
+                    <div class="absolute bg-white text-gray-900 w-11/12 bottom-4 left-1/2 -translate-x-1/2 hidden group-hover:block group-hover:animate-fadeIn text-center uppercase tracking tracking-wider py-4 px-8 text-[13px] font-semibold cursor-pointer hover:bg-opacity-90 ">Chi Tiết</div>
+                  </div>
+
+                </a>
+
+              </div>
+              <div class="text-center mt-8">
+                <a href="#" alt="ct-product">
+                  <div class="text-xl mb-3 hover:text-dark-blue">Tiêm filter</div>
+                </a>
+                <div class="">
+                  
+                  <span class=" text-gray-800">800.000 VND</span>
+                </div>
+              </div>
+              </div>
+              <div class="ct-product-card">
+                <div class=" h-[400px] sm:h-[500px] bg-[url('./assets/massage.jpg')] bg-cover bg-no-repeat bg-center">
+                  <a href="#" alt="lamdeptugoc">
+                    <div class="w-full h-full hover:bg-gray-900 hover:bg-opacity-10 hover:transition-all hover:ease-in-out hover:duration-400 relative group">
+                      <div class="absolute w-[100px] bg-white py-2 px-4 top-3 right-3 text-center uppercase font-semibold text-red-600"> ưu đãi</div>
+                      <div class="absolute bg-white text-gray-900 w-11/12 bottom-4 left-1/2 -translate-x-1/2 hidden group-hover:block group-hover:animate-fadeIn text-center uppercase tracking tracking-wider py-4 px-8 text-[13px] font-semibold cursor-pointer hover:bg-opacity-90 ">Chi Tiết</div>
+                    </div>
+  
+                  </a>
+                </div>
+                <div class="text-center mt-8">
+                  <a href="#" alt="ct-product">
+                    <div class="text-xl mb-3 hover:text-dark-blue">Massage</div>
+                  </a>
+                  <div class="">
+                    <span class="text-lg text-dark-blue">500.000 VND</span>
+                    <span class="ml-2 text-gray-400 line-through">800.000 VND</span>
+                  </div>
+                </div>
+                </div>
+            </div>
+          </div>
+
+
+
+
+
+
+ <div class="ct-subheadline">
+            <div class="ct-subheadline-deco-line"></div>
+            <div class="ct-subheadline-label">Đội ngũ chuyên gia</div>
+            <div class="ct-subheadline-deco-line"></div>
+          </div>
+          <div class="prof w-[95%] lg:w-[65%] mx-auto mb-16">
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 lg:gap-4">
+              <div class="ct-product-card">
+              <div class=" h-[400px] bg-[url('./assets/staff1.jpg')] bg-cover bg-no-repeat bg-center">
+                <a href="#" alt="lamdeptugoc">
+                  <div class="w-full h-full hover:bg-gray-900 hover:bg-opacity-10 hover:transition-all hover:ease-in-out hover:duration-400 relative group">
+                    
+                   
+                  </div>
+
+                </a>
+
+              </div>
+              <div class="text-center my-8">
+                <a href="#" alt="ct-product">
+                  <div class="text-xl mb-3 hover:text-dark-blue">Nhân viên 1</div>
+                </a>
+                <div class="">
+                  
+                  <span class="text-base text-black">Vị trí</span>
+                </div>
+              </div>
+              </div>
+              <div class="ct-product-card">
+                <div class=" h-[400px] bg-[url('./assets/staff2.jpg')] bg-cover bg-no-repeat bg-center">
+                  <a href="#" alt="lamdeptugoc">
+                    <div class="w-full h-full hover:bg-gray-900 hover:bg-opacity-10 hover:transition-all hover:ease-in-out hover:duration-400 relative group">
+                      
+                     
+                    </div>
+  
+                  </a>
+                </div>
+                <div class="text-center my-8">
+                  <a href="#" alt="ct-product">
+                    <div class="text-xl mb-3 hover:text-dark-blue">Nhân viên 2</div>
+                  </a>
+                  <div class="">
+                    
+                    <span class="text-base text-black">Vị trí</span>
+                  </div>
+                </div>
+                </div>
+                <div class="ct-product-card">
+                  <div class=" h-[400px] bg-[url('./assets/staff3.jpg')] bg-cover bg-no-repeat bg-center">
+                    <a href="#" alt="lamdeptugoc">
+                      <div class="w-full h-full hover:bg-gray-900 hover:bg-opacity-10 hover:transition-all hover:ease-in-out hover:duration-400 relative group">
+                        
+                       
+                      </div>
+    
+                    </a>
+                  </div>
+                  <div class="text-center my-8">
+                    <a href="#" alt="ct-product">
+                      <div class="text-xl mb-3 hover:text-dark-blue">Nhân viên 3</div>
+                    </a>
+                    <div class="">
+                     
+                      <span class="text-base text-black">Vị trí</span>
+                    </div>
+                  </div>
+                  </div>
+            </div>
+
+
+
+
+fadeIn: {
+        from: {opacity :0},
+        to: {opacity: 1}
+      }
+    },
+
+animation: {
+        slideDown: 'slideDown .5s ease-in-out',
+        fadeIn: 'fadeIn .5s ease-in-out',
+      },
