@@ -6,6 +6,8 @@
 const topMenu = document.getElementById("ct-top-menu");
 const toggleTopMenuIcon = document.getElementById("ct-toggle-top-menu-icon");
 
+console.log("topMenu:", topMenu);
+console.log("toggleTopMenuIcon:", toggleTopMenuIcon);
 document.addEventListener("click", (e) => {
   if (toggleTopMenuIcon.contains(e.target)) {
     // Click to Toggle top menu icon
@@ -54,3 +56,7 @@ document.addEventListener("DOMContentLoaded", function () {
     // );
   });
 });
+
+
+// Banner slide show
+

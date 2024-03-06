@@ -69,5 +69,9 @@ html, body {
 }
 
 .ct-fb-img {
-  @apply w-[150px] h-[100px] mr-5  ;
+  @apply w-[200px] h-[200px] mr-5  ;
+}
+
+.ct-banner-img {
+  @apply w-full h-full object-cover;
 }
