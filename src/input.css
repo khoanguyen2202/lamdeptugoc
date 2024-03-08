@@ -1,4 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+
+
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
@@ -41,10 +44,10 @@ html, body {
   @apply flex  justify-center items-center mb-24;
 }
 .ct-subheadline-deco-line{
-  @apply w-8 h-px bg-gray-600;
+  @apply w-10 h-px bg-dark-blue ;
 }
 .ct-subheadline-label{
-  @apply uppercase mx-4 tracking-widest text-gray-600 font-medium text-[13px] text-center;
+  @apply uppercase mx-4 tracking-widest text-dark-blue font-semibold text-[17px] text-center;
 }
 
 .ct-input {
@@ -68,10 +71,22 @@ html, body {
   display: inline-block;
 }
 
-.ct-fb-img {
+.ct-news-img {
   @apply w-[200px] h-[200px] mr-5  ;
 }
 
 .ct-banner-img {
-  @apply w-full h-full object-cover;
+  @apply w-full h-full bg-cover;
+}
+
+.ct-fb-img {
+  @apply lg:w-[300px] lg:h-[300px] lg:rounded-full lg:mr-5 mr-0  rounded-3xl w-[200px] h-[200px] text-center ;
+}
+
+.ct-fb-message {
+  @apply border-2 rounded-full p-5 lg:text-sm text-xs text-center;
+}
+
+.ct-title {
+  @apply mb-24;
 }

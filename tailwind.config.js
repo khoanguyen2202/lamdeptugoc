@@ -4,10 +4,12 @@ module.exports = {
   theme: {
     extend: {
       fontFamily:{
-        Roboto:['Roboto','sans-serif']
+        Roboto:['Roboto','sans-serif'],
+        Belleza:['Belleza','sans-serif']
       },
       colors:{
         'dark-blue':'#1d3654'
+        
       },
       keyframes: {
         slideDown: {
@@ -18,7 +20,11 @@ module.exports = {
       animation: {
         slideDown: 'slideDown .4s ease-in-out',
       },
+      screens:{
+        'ct-screen-header':'1336px',
+      },
     },
+    
   },
   plugins: [],
 };
