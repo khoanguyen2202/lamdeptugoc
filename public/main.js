@@ -1,8 +1,9 @@
 
 
-// Template ID : template_hlujfqn
-// Service ID : service_4mr8k6m
-// Public Key: uTzmvIQPpbrJoj5eG
+// Template ID : template_vhm0e06
+// Service ID : service_vop9de5
+// Public Key: ZfTZk7CLCI4LO28EC
+// import emailjs from '@emailjs/browser'
 const topMenu = document.getElementById("ct-top-menu");
 const toggleTopMenuIcon = document.getElementById("ct-toggle-top-menu-icon");
 
@@ -24,38 +25,7 @@ document.addEventListener("click", (e) => {
 
 
 
-document.addEventListener("DOMContentLoaded", function () {
-  console.log("DOMContentLoaded event fired");
-  const dangKyForm = document.getElementById("form-dang-ky-ngay");
-  const dangKyButton = document.getElementById("button-dang-ky-ngay");
-  
-  dangKyButton.addEventListener("click", function (e) {
-    e.preventDefault();
 
-    const hotenValue = dangKyForm.elements.hoten.value;
-    const emailValue = dangKyForm.elements.email.value;
-    const sdtValue = dangKyForm.elements.sdt.value;
-   
-    // Log all form values
-    console.log("Họ tên:", hotenValue);
-    console.log("Email:", emailValue);
-    console.log("Số điện thoại:", sdtValue);
-    
-    // Perform additional actions or send the form data using emailjs
-    // emailjs.send("service_4mr8k6m", "template_hlujfqn", {
-    //   hoten: hotenValue,
-    //   email: emailValue,
-    //   sdt: sdtValue,
-    // }).then(
-    //   (response) => {
-    //     console.log("Sent successfully:", response);
-    //   },
-    //   (error) => {
-    //     console.error("Failed to send:", error);
-    //   }
-    // );
-  });
-});
 
 
 // Banner slide show

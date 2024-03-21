@@ -33,21 +33,21 @@ html, body {
 }
 
 .ct-icon {
-  @apply w-6 h-6 inline-block;
+  @apply w-6 h-6  inline-block;
 }
 
 .ct-footer-icon-text {
-  @apply flex items-center
+  @apply flex items-start flex-grow 
 }
 
 .ct-subheadline{
-  @apply flex  justify-center items-center mb-24;
+  @apply flex  justify-center items-center mb-4;
 }
 .ct-subheadline-deco-line{
   @apply w-10 h-px bg-dark-blue ;
 }
 .ct-subheadline-label{
-  @apply uppercase mx-4 tracking-widest text-dark-blue font-semibold text-[17px] text-center;
+  @apply uppercase mx-4 tracking-widest text-dark-blue font-black text-[17px] text-center text-2xl;
 }
 
 .ct-input {
@@ -76,7 +76,7 @@ html, body {
 }
 
 .ct-banner-img {
-  @apply w-full h-full bg-cover;
+  @apply w-full h-auto ;
 }
 
 .ct-fb-img {
@@ -84,9 +84,13 @@ html, body {
 }
 
 .ct-fb-message {
-  @apply border-2 rounded-full p-5 lg:text-sm text-xs text-center;
+  @apply border-2 rounded-full p-6 lg:text-lg text-sm text-left w-full mt-3;
 }
 
 .ct-title {
   @apply mb-24;
+}
+
+.ct-fb-swiper-slider {
+  @apply flex lg:flex-row  flex-col justify-start items-center sm:px-12;
 }

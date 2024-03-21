@@ -5,7 +5,8 @@
   "main": "index.js",
   "scripts": {
     "build:css": "tailwindcss -i ./src/input.css -o ./public/output.css --watch",
-    "start:dev": "live-server public"
+    "start:dev": "concurrently \"live-server public"
+
   },
   "keywords": [],
   "author": "lamdeptugoc.vn",
@@ -16,6 +17,7 @@
   "dependencies": {
     "@emailjs/browser": "^4.2.0",
     "emailjs": "^4.0.3",
+    "express": "^4.18.3",
     "live-server": "^1.2.2",
     "swiper": "^11.0.7"
   }

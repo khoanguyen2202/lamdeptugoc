@@ -1,11 +1,13 @@
 /** @type {import('tailwindcss').Config} */
+
 module.exports = {
   content: ["./public/**/*.{html,js}"],
   theme: {
     extend: {
       fontFamily:{
         Roboto:['Roboto','sans-serif'],
-        Belleza:['Belleza','sans-serif']
+        Merienda:['Merienda','sans-serif'],
+        
       },
       colors:{
         'dark-blue':'#1d3654'
@@ -22,6 +24,7 @@ module.exports = {
       },
       screens:{
         'ct-screen-header':'1336px',
+        'iphone-400px':"400px"
       },
     },
     
