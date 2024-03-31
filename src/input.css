@@ -84,7 +84,7 @@ html, body {
 }
 
 .ct-fb-message {
-  @apply border-2 rounded-full p-6 lg:text-lg text-sm text-left w-full mt-3;
+  @apply border-2 rounded-full  lg:text-lg text-sm text-left w-full mt-3 p-14;
 }
 
 .ct-title {
