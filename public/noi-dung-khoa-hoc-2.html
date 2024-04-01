@@ -1,735 +1,920 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel="icon" href="./assets/logo_lamdeptugoc.ico" type="image/gif"
-            sizes="16x16" />
-        <title>Lam dep tu goc</title>
-        <link href="./output.css" type="text/css" rel="stylesheet" />
-        <title>Document</title>
-    </head>
-    <body>
-        <div class="content-wrapper font-Roboto text-lg w-[100%]  mx-auto  ">
-          <header class=" mx-auto w-[80%]  ">
-            <nav class="flex flex-row ct-screen-header:justify-evenly justify-between items-center relative">
-              <!-- Logo -->
-              <div class="logo  basis-1/7 flex justify-center items-center mr-10">
-  
-                <a href="/index.html">
-  
-                  <img src="/assets/logo_lamdeptugoc.png" alt="header_logo"
-                    width="80" height="40" class="cursor-pointer" />
-                </a>
-  
-              </div>
-              <!-- 4 tags -->
-              <ul id="ct-top-menu"
-                class="ct-screen-header:basis-4/7 hidden ct-screen-header:flex items-center ct-screen-header:justify-end gap-8 uppercase text-gray-600 font-medium">
-                <a href="/index.html#story">
-  
-                  <li class="ct-top-menu-item">Giới thiệu</li>
-                </a>
-                <a href="/index.html#khoa-dao-tao">
-  
-                  <li class="ct-top-menu-item">Khóa đào tạo</li>
-                </a>
-                <a href="/index.html#doi-ngu-chuyen-gia">
-  
-                  <li class="ct-top-menu-item">
-                    Đội ngũ chuyên gia
-                  </li>
-                </a>
-                <a href="/index.html#tin-tuc">
-  
-                  <li class="ct-top-menu-item">Tin tức</li>
-                </a>
-              </ul>
-  
-              <!-- Contact -->
-              <ul
-                class="ct-screen-header:basis-2/7 hidden ct-screen-header:flex justify-end ct-screen-header:justify-start items-center  uppercasetext-gray-500 font-medium gap-8">
-                <!-- Hotline -->
-                <li class="border-2 rounded-2xl bg-dark-blue p-1 mr-2">
-                  <a href="tel:0961842650" class="flex items-center">
-                    <svg xmlns="http://www.w3.org/2000/svg" fill="white"
-                      viewBox="0 0 24 24" stroke-width="1.5"
-                      stroke="none" class="ct-icon">
-                      <path stroke-linecap="round" stroke-linejoin="round"
-                        d="M20.25 3.75v4.5m0-4.5h-4.5m4.5 0-6 6m3 12c-8.284 0-15-6.716-15-15V4.5A2.25 2.25 0 0 1 4.5 2.25h1.372c.516 0 .966.351 1.091.852l1.106 4.423c.11.44-.054.902-.417 1.173l-1.293.97a1.062 1.062 0 0 0-.38 1.21 12.035 12.035 0 0 0 7.143 7.143c.441.162.928-.004 1.21-.38l.97-1.293a1.125 1.125 0 0 1 1.173-.417l4.423 1.106c.5.125.852.575.852 1.091V19.5a2.25 2.25 0 0 1-2.25 2.25h-2.25Z" />
-                    </svg>
-  
-                    <span class="mx-2 text-white text-lg">096 184 26 50</span>
-                  </a>
-                </li>
-                <!-- Dang ky ngay -->
-                <li class="border-2 rounded-2xl p-1 bg-red-600 ">
-                  <a href="#dang-ky-ngay" class="flex items-center">
-                    <svg xmlns="http://www.w3.org/2000/svg" fill="white"
-                      viewBox="0 0 24 24" stroke-width="1.5"
-                      stroke="white" class="w-6 h-6">
-                      <path stroke-linecap="round" stroke-linejoin="round"
-                        d="M8.625 12a.375.375 0 1 1-.75 0 .375.375 0 0 1 .75 0Zm0 0H8.25m4.125 0a.375.375 0 1 1-.75 0 .375.375 0 0 1 .75 0Zm0 0H12m4.125 0a.375.375 0 1 1-.75 0 .375.375 0 0 1 .75 0Zm0 0h-.375M21 12c0 4.556-4.03 8.25-9 8.25a9.764 9.764 0 0 1-2.555-.337A5.972 5.972 0 0 1 5.41 20.97a5.969 5.969 0 0 1-.474-.065 4.48 4.48 0 0 0 .978-2.025c.09-.457-.133-.901-.467-1.226C3.93 16.178 3 14.189 3 12c0-4.556 4.03-8.25 9-8.25s9 3.694 9 8.25Z" />
-                    </svg>
-                    <span class="mx-2 text-white text-lg">Đăng ký ngay</span>
-                  </a>
-                </li>
-                <!-- So Hotline -->
-              </ul>
-              <!-- Menu Responsive -->
-              <div
-                class="basis-4/7 ct-screen-header:hidden flex justify-end items-center cursor-pointer px-3 sm:px-8">
-                <svg id="ct-toggle-top-menu-icon"
-                  xmlns="http://www.w3.org/2000/svg" fill="none"
-                  viewBox="0 0 24 24"
-                  stroke-width="1.5" stroke="currentColor" class="ct-icon">
-                  <path stroke-linecap="round" stroke-linejoin="round"
-                    d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
-                </svg>
-              </div>
-            </nav>
-          </header>
 
-            <main class="mb-20 ">
-                <div
-                    class="slider w-auto bg-[url('./assets/bg-darkblue.jpeg')] bg-cover bf-no-repeat bg-bottom mb-4 flex  py-6 text-white">
-                    <div class="flex flex-col items-start w-[60%] mx-auto">
-                        <h1
-                            class="mb-10 text-7xl mx-auto iphone-400px:mx-0 ">Khoá học gội đầu dưỡng sinh trị liệu từ gốc </h1>
-                        <p
-                            class="mb-20 text-2xl  mx-auto iphone-400px:mx-0">🗞️Gội đầu dưỡng sinh trị liệu ngọc thủy. <br>
-                            🗞️Gội đầu dưỡng sinh trị liệu đau đầu <br>
-                            🗞️Gội đầu dưỡng sinh trị liệu đau vai gáy cổ. <br>
-                            🗞️Gội đầu dưỡng sinh trị liệu mất ngủ. <br>
-                            🗞️Gội đầu dưỡng sinh trị liệu chuông xoay Nepal. <br>
-                            🗞️ Gội đầu dưỡng sinh trị liệu nấm da đầu <br>
-                            🗞️ Gội đầu dưỡng sinh trị liệu kích mọc tóc.</p> <div
-                            class="border-2 iphone-400px:p-2  mb-16 p-2 text-sm iphone-400px:text-lg">
-                            <ul
-                                class="flex lg:flex-row gap-10  flex-wrap justify-center items-center ">
-                                <li class="flex flex-col">
-                                    <h1>
-                                        Khai giảng
-                                    </h1>
-                                    <p>25.03.2024</p>
-                                </li>
-                                <li class="flex flex-col">
-                                    <h1>
-                                      Giảng viên
-                                    </h1>
-                                    <p>CEO Cao Thị Lệ Thuỷ  </p>
-                                </li>
-                                <li class="flex flex-col">
-                                    <h1>
-                                        Học phí
-                                    </h1>
-                                    <p>8.890.000 VND
-                                    </p>
-                                </li>
-                                <li class="flex flex-col">
-                                    <h1>
-                                        Thời lượng khoá học
-                                    </h1>
-                                    <p>? </p>
-                                </li>
-                                <li class="flex flex-col">
-                                    <h1>
-                                        Hình thức học
-                                    </h1>
-                                    <p>Online</p>
-                                </li>
-                                <li class="flex flex-col">
-                                    <h1>
-                                        Ngày kết thúc
-                                    </h1>
-                                    <p>25.03.2024</p>
-                                </li>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" href="./assets/logo_lamdeptugoc.ico" type="image/gif" sizes="16x16" />
+  <title>Lam dep tu goc</title>
+  <link href="./output.css" type="text/css" rel="stylesheet" />
+  <title>Document</title>
+</head>
 
-                            </ul>
-                        </div>
-                        <div
-                            class="flex justify-center leading-10 mx-auto sm:mx-0">
-                            <a href="index.html#dang-ky-ngay"
-                                class="uppercase bg-white text-gray-900 w-max tracking-wider py-4 px-8 text-sm font-semibold cursor-pointer hover:bg-opacity-95">
+<body>
+  <div class="content-wrapper font-Roboto text-lg w-[100%]  mx-auto  ">
+    <header class=" mx-auto w-[80%]  ">
+      <nav class="flex flex-row ct-screen-header:justify-evenly justify-between items-center relative">
+        <!-- Logo -->
+        <div class="logo  basis-1/7 flex justify-center items-center mr-10">
 
-                                Đăng ký ngay
+          <a href="/index.html">
 
-                            </a>
-                        </div>
-                    </div>
-                </div>
-                <!-- <div class="my-auto mx-auto w-[80%] mb-6">
-                    <h1 class="text-4xl font-semibold w-[80%] mx-auto mb-4">
-                        1. Tieu de
-                    </h1>
-                    <div class="w-[70%] mx-auto">
+            <img src="/assets/logo_lamdeptugoc.png" alt="header_logo" width="80" height="40" class="cursor-pointer" />
+          </a>
 
-                        <h3 class="text-xl font-base ">
-                            Lorem ipsum dolor sit amet consectetur
-                            adipisicing elit. Rem nam consequatur cupiditate
-                            modi laudantium. Iure provident, assumenda
-                            exercitationem sapiente doloribus nobis.
-                            Molestiae voluptates commodi blanditiis hic
-                            quisquam, vero tenetur odit!
-                        </h3>
-                    </div>
-                </div>
-                <div class="my-auto mx-auto w-[80%] mb-6">
-                    <h1 class="text-4xl font-semibold w-[80%] mx-auto mb-4">
-                        2. Tieu de
-                    </h1>
-                    <div class="w-[70%] mx-auto">
-
-                        <h3 class="text-xl font-base ">
-                            Lorem ipsum dolor sit amet consectetur
-                            adipisicing elit. Rem nam consequatur cupiditate
-                            modi laudantium. Iure provident, assumenda
-                            exercitationem sapiente doloribus nobis.
-                            Molestiae voluptates commodi blanditiis hic
-                            quisquam, vero tenetur odit!
-                        </h3>
-                    </div>
-                </div>
-                <div class="my-auto mx-auto w-[80%] mb-6">
-                    <h1 class="text-4xl font-semibold w-[80%] mx-auto mb-4">
-                        3. Tieu de
-                    </h1>
-                    <div class="w-[70%] mx-auto">
-
-                        <h3 class="text-xl font-base ">
-                            Lorem ipsum dolor sit amet consectetur
-                            adipisicing elit. Rem nam consequatur cupiditate
-                            modi laudantium. Iure provident, assumenda
-                            exercitationem sapiente doloribus nobis.
-                            Molestiae voluptates commodi blanditiis hic
-                            quisquam, vero tenetur odit!
-                        </h3>
-                    </div>
-                </div> -->
-                <div id="doi-ngu-chuyen-gia">
-                    <div class="ct-subheadline">
-                      <div class="ct-subheadline-deco-line"></div>
-                      <div class="ct-subheadline-label">Giảng viên khoá học</div>
-                      <div class="ct-subheadline-deco-line"></div>
-                    </div>
-        
-                    <div class="prof w-[95%] lg:w-[65%] mx-auto mb-10 ">
-                      <swiper-container pagination="true">
-                        <swiper-slide>
-                          <div
-                            class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 lg:gap-4">
-                            <div class="ct-product-card">
-                              <div
-                                class=" h-[400px] bg-[url('./assets/staff1.jpg')] bg-cover bg-no-repeat bg-center">
-                              
-                                  <div
-                                    class="w-full h-full hover:bg-gray-900 hover:bg-opacity-10 hover:transition-all hover:ease-in-out hover:duration-400 relative group">
-        
-                                  </div>
-        
-                               
-        
-                              </div>
-                              <div class="text-center my-8">
-                               
-                                  <div class="text-xl mb-3 hover:text-dark-blue">Chuyên
-                                    gia
-                                    1</div>
-                              
-                                <div class>
-        
-                                  <span class="text-base text-black">Vị trí</span>
-                                </div>
-                              </div>
-                            </div>
-                            <div class="ct-product-card">
-                              <div
-                                class=" h-[400px] bg-[url('./assets/staff2.jpg')] bg-cover bg-no-repeat bg-center">
-                               
-                                  <div
-                                    class="w-full h-full hover:bg-gray-900 hover:bg-opacity-10 hover:transition-all hover:ease-in-out hover:duration-400 relative group">
-        
-                                  </div>
-        
-                               
-                              </div>
-                              <div class="text-center my-8">
-                               
-                                  <div class="text-xl mb-3 hover:text-dark-blue">Chuyên
-                                    gia
-                                    2</div>
-                               
-                                <div class>
-        
-                                  <span class="text-base text-black">Vị trí</span>
-                                </div>
-                              </div>
-                            </div>
-                            <div class="ct-product-card">
-                              <div
-                                class=" h-[400px] bg-[url('./assets/staff3.jpg')] bg-cover bg-no-repeat bg-center">
-                               
-                                  <div
-                                    class="w-full h-full hover:bg-gray-900 hover:bg-opacity-10 hover:transition-all hover:ease-in-out hover:duration-400 relative group">
-        
-                                  </div>
-        
-                               
-                              </div>
-                              <div class="text-center my-8">
-                             
-                                  <div class="text-xl mb-3 hover:text-dark-blue">Chuyên
-                                    gia
-                                    3</div>
-                               
-                                <div class>
-        
-                                  <span class="text-base text-black">Vị trí</span>
-                                </div>
-                              </div>
-                            </div>
-                          </div>
-                        </swiper-slide>
-                        <swiper-slide>
-                          <div
-                            class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 lg:gap-4">
-                            <div class="ct-product-card">
-                              <div
-                                class=" h-[400px] bg-[url('./assets/staff1.jpg')] bg-cover bg-no-repeat bg-center">
-                                <a href="#" alt="lamdeptugoc">
-                                  <div
-                                    class="w-full h-full hover:bg-gray-900 hover:bg-opacity-10 hover:transition-all hover:ease-in-out hover:duration-400 relative group">
-        
-                                  </div>
-        
-                                </a>
-        
-                              </div>
-                              <div class="text-center my-8">
-                                
-                                  <div class="text-xl mb-3 hover:text-dark-blue">Chuyên
-                                    gia
-                                    1</div>
-                                
-                                <div class>
-        
-                                  <span class="text-base text-black">Vị trí</span>
-                                </div>
-                              </div>
-                            </div>
-                            <div class="ct-product-card">
-                              <div
-                                class=" h-[400px] bg-[url('./assets/staff2.jpg')] bg-cover bg-no-repeat bg-center">
-                                
-                                  <div
-                                    class="w-full h-full hover:bg-gray-900 hover:bg-opacity-10 hover:transition-all hover:ease-in-out hover:duration-400 relative group">
-        
-                                  </div>
-        
-                                
-                              </div>
-                              <div class="text-center my-8">
-                                
-                                  <div class="text-xl mb-3 hover:text-dark-blue">Chuyên
-                                    gia
-                                    2</div>
-                              
-                                <div class>
-        
-                                  <span class="text-base text-black">Vị trí</span>
-                                </div>
-                              </div>
-                            </div>
-                            <div class="ct-product-card">
-                              <div
-                                class=" h-[400px] bg-[url('./assets/staff3.jpg')] bg-cover bg-no-repeat bg-center">
-                              
-                                  <div
-                                    class="w-full h-full hover:bg-gray-900 hover:bg-opacity-10 hover:transition-all hover:ease-in-out hover:duration-400 relative group">
-        
-                                  </div>
-        
-                                
-                              </div>
-                              <div class="text-center my-8">
-                                
-                                  <div class="text-xl mb-3 hover:text-dark-blue">Chuyên
-                                    gia
-                                    3</div>
-                                
-                                <div class>
-        
-                                  <span class="text-base text-black">Vị trí</span>
-                                </div>
-                              </div>
-                            </div>
-                          </div>
-                        </swiper-slide>
-                      </swiper-container>
-                    </div>
-        
-                  </div>
-                <div class=" w-[80%] mx-auto flex flex-col">
-                    <div class="ct-subheadline">
-                      <div class="ct-subheadline-deco-line"></div>
-                      <div class="ct-subheadline-label">
-                        Feedback từ học viên
-                      </div>
-                      <div class="ct-subheadline-deco-line"></div>
-                    </div>
-        
-                    <!-- Feedback Slider -->
-                    <div>
-        
-                      <swiper-container navigation="true">
-                        <swiper-slide
-                          class="ct-fb-swiper-slider">
-                          <img src="/assets/feedback-1.jpg" alt="feedback-1"
-                            class="ct-fb-img">
-                          <div class="flex flex-col lg:mt-0 mt-6 w-full">
-        
-                            <h3
-                              class="lg:mb-6 lg:ml-6 mb-0 ml-0  text-lg font-bold text-center lg:text-left">Nguyen
-                              Thu Thuy</h3>
-                            <p class="ct-fb-message">Lorem ipsum dolor, sit amet
-                              consectetur
-                              adipisicing elit. Nemo, sit! Vero, nemo, beatae nesciunt
-                              minima
-                              ipsum mollitia alias aut dolore tenetur eveniet esse nulla
-                              tempore placeat minus accusamus sint dolorum!</p>
-                          </div>
-                        </swiper-slide>
-        
-                        <swiper-slide
-                          class="ct-fb-swiper-slider">
-                          <img src="/assets/feedback-3.jpg" alt="feedback-1"
-                            class="ct-fb-img">
-                          <div class="flex flex-col lg:mt-0 mt-6 w-full ">
-        
-                            <h3
-                              class="lg:mb-6 lg:ml-6 mb-0 ml-0  text-lg font-bold text-center lg:text-left">Nguyen
-                              Thu Thuy</h3>
-                            <p class=" ct-fb-message">Lorem ipsum dolor, sit amet
-                              consectetur
-                            </p>
-                          </div>
-                        </swiper-slide>
-                        <swiper-slide
-                          class="ct-fb-swiper-slider">
-                          <img src="/assets/feedback-4.jpg" alt="feedback-1"
-                            class="ct-fb-img">
-                          <div class="flex flex-col lg:mt-0 mt-6 w-full ">
-        
-                            <h3
-                              class="lg:mb-6 lg:ml-6 mb-0 ml-0  text-lg font-bold text-center lg:text-left">Nguyen
-                              Thu Thuy</h3>
-                            <p class=" ct-fb-message">Lorem ipsum dolor, sit amet
-                              consectetur
-                              adipisicing elit. Nemo, sit! Vero, nemo, beatae nesciunt
-                              minima
-                              ipsum mollitia alias aut dolore tenetur eveniet esse nulla
-                              tempore placeat minus accusamus sint dolorum!</p>
-                          </div>
-                        </swiper-slide>
-        
-                      </swiper-slide>
-                      <swiper-slide
-                        class="ct-fb-swiper-slider">
-                        <img src="/assets/feedback-1.jpg" alt="feedback-1"
-                          class="ct-fb-img">
-                        <div class="flex flex-col lg:mt-0 mt-6 w-full">
-        
-                          <h3
-                            class="lg:mb-6 lg:ml-6 mb-0 ml-0  text-lg font-bold text-center lg:text-left">Nguyen
-                            Thu Thuy</h3>
-                          <p class=" ct-fb-message">Lorem ipsum dolor, sit amet
-                            consectetur
-                            adipisicing elit. Nemo, sit! Vero, nemo, beatae nesciunt
-                            minima
-                            ipsum mollitia alias aut dolore tenetur eveniet esse nulla
-                            tempore placeat minus accusamus sint dolorum!</p>
-                        </div>
-                      </swiper-slide>
-        
-                    </swiper-container>
-                  </div>
-        
-                </div>
-
-            </main>
-
-            <footer
-            class="w-[90%] mx-auto p-10 border-t-2 border-dark-blue border-opacity-50 ">
-            <div
-              class="flex flex-col lg:flex-row  text-center lg:text-left lg:gap-8 justify-evenly">
-    
-              <!-- Footer Logo -->
-              <div
-                class="footer_logo basis-1/7 flex justify-center items-center lg:mr-20 lg:mb-0 mb-4 ">
-                <img src="./assets/logo_lamdeptugoc.png" alt="footer_logo"
-                  width="160" height="286" />
-              </div>
-    
-              <!-- Footer Address -->
-              <div
-                class="footer_address lg:basis-4/7 tracking-wider flex flex-col justify-center lg:items-start items-center lg:mr-10 lg:mb-0 mb-4">
-                <h3
-                  class="font-medium uppercase text-xl mb-10 lg:mb-12 text-center flex-grow-[1]">
-                  Thủy Cao - Spa Pensée
-                </h3>
-    
-                <div
-                  class="flex flex-col gap-8 items-start justify-center flex-grow-[3] ">
-                  <a class="ct-footer-icon-text " target=”_blank”
-                    href="https://www.google.com/maps/place/%C4%90%E1%BA%B7ng+Thanh+S%E1%BB%AD,+%C3%94+M%C3%B4n,+C%E1%BA%A7n+Th%C6%A1,+Vietnam/@10.1225388,105.6594298,21z/data=!4m6!3m5!1s0x31a08443de4ca8af:0x1ff4eb846390fb28!8m2!3d10.1225612!4d105.6594624!16s%2Fg%2F11b77lkdkp?entry=ttu">
-    
-                    <div class="flex flex-row">
-                      <svg xmlns="http://www.w3.org/2000/svg" fill="none"
-                        viewBox="0 0 24 24" stroke-width="1.5"
-                        stroke="currentColor" class="w-6 h-6 mr-2">
-                        <path stroke-linecap="round" stroke-linejoin="round"
-                          d="M15 10.5a3 3 0 1 1-6 0 3 3 0 0 1 6 0Z" />
-                        <path stroke-linecap="round" stroke-linejoin="round"
-                          d="M19.5 10.5c0 7.142-7.5 11.25-7.5 11.25S4.5 17.642 4.5 10.5a7.5 7.5 0 1 1 15 0Z" />
-                      </svg>
-    
-                      <p class="text-center">353 Đặng Thanh Sử, Cần Thơ</p>
-                    </div>
-                  </a>
-    
-                  <a class="ct-footer-icon-text" href="tel:096 184 26 50">
-                    <svg xmlns="http://www.w3.org/2000/svg" fill="none"
-                      viewBox="0 0 24 24" stroke-width="1.5"
-                      stroke="currentColor" class="w-6 h-6 mr-4">
-                      <path stroke-linecap="round" stroke-linejoin="round"
-                        d="M2.25 6.75c0 8.284 6.716 15 15 15h2.25a2.25 2.25 0 0 0 2.25-2.25v-1.372c0-.516-.351-.966-.852-1.091l-4.423-1.106c-.44-.11-.902.055-1.173.417l-.97 1.293c-.282.376-.769.542-1.21.38a12.035 12.035 0 0 1-7.143-7.143c-.162-.441.004-.928.38-1.21l1.293-.97c.363-.271.527-.734.417-1.173L6.963 3.102a1.125 1.125 0 0 0-1.091-.852H4.5A2.25 2.25 0 0 0 2.25 4.5v2.25Z" />
-                    </svg>
-                    <span class="text-center">096 184 26 50</span>
-                  </a>
-    
-                  <div class="ct-footer-icon-text">
-                    <svg xmlns="http://www.w3.org/2000/svg" fill="none"
-                      viewBox="0 0 24 24" stroke-width="1.5"
-                      stroke="currentColor" class="w-6 h-6 stroke-gray-600 mr-4">
-                      <path stroke-linecap="round" stroke-linejoin="round"
-                        d="M21.75 6.75v10.5a2.25 2.25 0 0 1-2.25 2.25h-15a2.25 2.25 0 0 1-2.25-2.25V6.75m19.5 0A2.25 2.25 0 0 0 19.5 4.5h-15a2.25 2.25 0 0 0-2.25 2.25m19.5 0v.243a2.25 2.25 0 0 1-1.07 1.916l-7.5 4.615a2.25 2.25 0 0 1-2.36 0L3.32 8.91a2.25 2.25 0 0 1-1.07-1.916V6.75" />
-                    </svg>
-    
-                    <span class="text-gray-600">lamdeptugoc@gmail.com</span>
-                  </div>
-                </div>
-              </div>
-    
-              <!-- Footer Hotline -->
-              <div
-                class="footer_hotline lg:basis-2/7 tracking-wider flex flex-col justify-center lg:items-start lg:mt-0 mt-6 items-center ">
-                <h3
-                  class="font-medium uppercase text-xl mb-10 lg:mb-12 text-center flex-grow ">
-                  Liên hệ
-                </h3>
-                <ul class="flex flex-col gap-8   items-start flex-grow-[3]">
-                  <li class="ct-footer-icon-text ">
-    
-                    <a class="flex " target=”_blank”
-                      href="https://www.facebook.com/profile.php?id=61556756640853">
-                      <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px"
-                        width="50" height="100" viewBox="0 0 50 50"
-                        style="fill: #333" class="ct-icon mr-2 mt-[3px] ">
-                        <path
-                          d="M41,4H9C6.24,4,4,6.24,4,9v32c0,2.76,2.24,5,5,5h32c2.76,0,5-2.24,5-5V9C46,6.24,43.76,4,41,4z M37,19h-2c-2.14,0-3,0.5-3,2 v3h5l-1,5h-4v15h-5V29h-4v-5h4v-3c0-4,2-7,6-7c2.9,0,4,1,4,1V19z">
-                        </path>
-                      </svg>
-                      <span class="text-left">Cộng đồng làm đẹp từ gốc</span>
-                    </a>
-                  </li>
-                  <li class="ct-footer-icon-text ">
-                    <svg style="color: #333" xmlns="http://www.w3.org/2000/svg"
-                      viewBox="0 0 512 512" class="ct-icon mr-2">
-                      <!--! Font Awesome Free 6.1.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc. -->
-                      <path
-                        d="M256.55 8C116.52 8 8 110.34 8 248.57c0 72.3 29.71 134.78 78.07 177.94 8.35 7.51 6.63 11.86 8.05 58.23A19.92 19.92 0 0 0 122 502.31c52.91-23.3 53.59-25.14 62.56-22.7C337.85 521.8 504 423.7 504 248.57 504 110.34 396.59 8 256.55 8zm149.24 185.13l-73 115.57a37.37 37.37 0 0 1-53.91 9.93l-58.08-43.47a15 15 0 0 0-18 0l-78.37 59.44c-10.46 7.93-24.16-4.6-17.11-15.67l73-115.57a37.36 37.36 0 0 1 53.91-9.93l58.06 43.46a15 15 0 0 0 18 0l78.41-59.38c10.44-7.98 24.14 4.54 17.09 15.62z"
-                        fill="#333"></path>
-                    </svg>
-                    <a href="https://www.facebook.com/messages/t/251528038040215" class="flex justify-start">
-                      <span class="text-left"> Inbox Cộng đồng làm đẹp từ gốc </span>
-                    </a>
-                  </li>
-                  <li class="ct-footer-icon-text">
-                    <svg class="ct-icon mr-2" height="2372" id="Layer_1"
-                      viewBox="0 0 460.1 436.6" width="2500"
-                      xmlns="http://www.w3.org/2000/svg">
-                      <style>
-                        .st0 {
-                          fill: #fdfefe;
-                        }
-    
-                        .st1 {
-                          fill: #333;
-                        }
-    
-                        .st2 {
-                          fill: #333;
-                        }
-    
-                        .st3 {
-                          fill: none;
-                          stroke: #333;
-                          stroke-width: 2;
-                          stroke-miterlimit: 10;
-                        }
-                      </style>
-                      <title />
-                      <path class="st0"
-                        d="M82.6 380.9c-1.8-.8-3.1-1.7-1-3.5 1.3-1 2.7-1.9 4.1-2.8 13.1-8.5 25.4-17.8 33.5-31.5 6.8-11.4 5.7-18.1-2.8-26.5C69 269.2 48.2 212.5 58.6 145.5 64.5 107.7 81.8 75 107 46.6c15.2-17.2 33.3-31.1 53.1-42.7 1.2-.7 2.9-.9 3.1-2.7-.4-1-1.1-.7-1.7-.7-33.7 0-67.4-.7-101 .2C28.3 1.7.5 26.6.6 62.3c.2 104.3 0 208.6 0 313 0 32.4 24.7 59.5 57 60.7 27.3 1.1 54.6.2 82 .1 2 .1 4 .2 6 .2H290c36 0 72 .2 108 0 33.4 0 60.5-27 60.5-60.3v-.6-58.5c0-1.4.5-2.9-.4-4.4-1.8.1-2.5 1.6-3.5 2.6-19.4 19.5-42.3 35.2-67.4 46.3-61.5 27.1-124.1 29-187.6 7.2-5.5-2-11.5-2.2-17.2-.8-8.4 2.1-16.7 4.6-25 7.1-24.4 7.6-49.3 11-74.8 6zm72.5-168.5c1.7-2.2 2.6-3.5 3.6-4.8 13.1-16.6 26.2-33.2 39.3-49.9 3.8-4.8 7.6-9.7 10-15.5 2.8-6.6-.2-12.8-7-15.2-3-.9-6.2-1.3-9.4-1.1-17.8-.1-35.7-.1-53.5 0-2.5 0-5 .3-7.4.9-5.6 1.4-9 7.1-7.6 12.8 1 3.8 4 6.8 7.8 7.7 2.4.6 4.9.9 7.4.8 10.8.1 21.7 0 32.5.1 1.2 0 2.7-.8 3.6 1-.9 1.2-1.8 2.4-2.7 3.5-15.5 19.6-30.9 39.3-46.4 58.9-3.8 4.9-5.8 10.3-3 16.3s8.5 7.1 14.3 7.5c4.6.3 9.3.1 14 .1 16.2 0 32.3.1 48.5-.1 8.6-.1 13.2-5.3 12.3-13.3-.7-6.3-5-9.6-13-9.7-14.1-.1-28.2 0-43.3 0zm116-52.6c-12.5-10.9-26.3-11.6-39.8-3.6-16.4 9.6-22.4 25.3-20.4 43.5 1.9 17 9.3 30.9 27.1 36.6 11.1 3.6 21.4 2.3 30.5-5.1 2.4-1.9 3.1-1.5 4.8.6 3.3 4.2 9 5.8 14 3.9 5-1.5 8.3-6.1 8.3-11.3.1-20 .2-40 0-60-.1-8-7.6-13.1-15.4-11.5-4.3.9-6.7 3.8-9.1 6.9zm69.3 37.1c-.4 25 20.3 43.9 46.3 41.3 23.9-2.4 39.4-20.3 38.6-45.6-.8-25-19.4-42.1-44.9-41.3-23.9.7-40.8 19.9-40 45.6zm-8.8-19.9c0-15.7.1-31.3 0-47 0-8-5.1-13-12.7-12.9-7.4.1-12.3 5.1-12.4 12.8-.1 4.7 0 9.3 0 14v79.5c0 6.2 3.8 11.6 8.8 12.9 6.9 1.9 14-2.2 15.8-9.1.3-1.2.5-2.4.4-3.7.2-15.5.1-31 .1-46.5z" />
-                      <path class="st1"
-                        d="M139.5 436.2c-27.3 0-54.7.9-82-.1-32.3-1.3-57-28.4-57-60.7 0-104.3.2-208.6 0-313C.5 26.7 28.4 1.8 60.5.9c33.6-.9 67.3-.2 101-.2.6 0 1.4-.3 1.7.7-.2 1.8-2 2-3.1 2.7-19.8 11.6-37.9 25.5-53.1 42.7-25.1 28.4-42.5 61-48.4 98.9-10.4 66.9 10.5 123.7 57.8 171.1 8.4 8.5 9.5 15.1 2.8 26.5-8.1 13.7-20.4 23-33.5 31.5-1.4.8-2.8 1.8-4.2 2.7-2.1 1.8-.8 2.7 1 3.5.4.9.9 1.7 1.5 2.5 11.5 10.2 22.4 21.1 33.7 31.5 5.3 4.9 10.6 10 15.7 15.1 2.1 1.9 5.6 2.5 6.1 6.1z" />
-                      <path class="st2"
-                        d="M139.5 436.2c-.5-3.5-4-4.1-6.1-6.2-5.1-5.2-10.4-10.2-15.7-15.1-11.3-10.4-22.2-21.3-33.7-31.5-.6-.8-1.1-1.6-1.5-2.5 25.5 5 50.4 1.6 74.9-5.9 8.3-2.5 16.6-5 25-7.1 5.7-1.5 11.7-1.2 17.2.8 63.4 21.8 126 19.8 187.6-7.2 25.1-11.1 48-26.7 67.4-46.2 1-1 1.7-2.5 3.5-2.6.9 1.4.4 2.9.4 4.4v58.5c.2 33.4-26.6 60.6-60 60.9h-.5c-36 .2-72 0-108 0H145.5c-2-.2-4-.3-6-.3z" />
-                      <path class="st1"
-                        d="M155.1 212.4c15.1 0 29.3-.1 43.4 0 7.9.1 12.2 3.4 13 9.7.9 7.9-3.7 13.2-12.3 13.3-16.2.2-32.3.1-48.5.1-4.7 0-9.3.2-14-.1-5.8-.3-11.5-1.5-14.3-7.5s-.8-11.4 3-16.3c15.4-19.6 30.9-39.3 46.4-58.9.9-1.2 1.8-2.4 2.7-3.5-1-1.7-2.4-.9-3.6-1-10.8-.1-21.7 0-32.5-.1-2.5 0-5-.3-7.4-.8-5.7-1.3-9.2-7-7.9-12.6.9-3.8 3.9-6.9 7.7-7.8 2.4-.6 4.9-.9 7.4-.9 17.8-.1 35.7-.1 53.5 0 3.2-.1 6.3.3 9.4 1.1 6.8 2.3 9.7 8.6 7 15.2-2.4 5.7-6.2 10.6-10 15.5-13.1 16.7-26.2 33.3-39.3 49.8-1.1 1.3-2.1 2.6-3.7 4.8z" />
-                      <path class="st1"
-                        d="M271.1 159.8c2.4-3.1 4.9-6 9-6.8 7.9-1.6 15.3 3.5 15.4 11.5.3 20 .2 40 0 60 0 5.2-3.4 9.8-8.3 11.3-5 1.9-10.7.4-14-3.9-1.7-2.1-2.4-2.5-4.8-.6-9.1 7.4-19.4 8.7-30.5 5.1-17.8-5.8-25.1-19.7-27.1-36.6-2.1-18.3 4-33.9 20.4-43.5 13.6-8.1 27.4-7.4 39.9 3.5zm-35.4 36.5c.2 4.4 1.6 8.6 4.2 12.1 5.4 7.2 15.7 8.7 23 3.3 1.2-.9 2.3-2 3.3-3.3 5.6-7.6 5.6-20.1 0-27.7-2.8-3.9-7.2-6.2-11.9-6.3-11-.7-18.7 7.8-18.6 21.9zM340.4 196.9c-.8-25.7 16.1-44.9 40.1-45.6 25.5-.8 44.1 16.3 44.9 41.3.8 25.3-14.7 43.2-38.6 45.6-26.1 2.6-46.8-16.3-46.4-41.3zm25.1-2.4c-.2 5 1.3 9.9 4.3 14 5.5 7.2 15.8 8.6 23 3 1.1-.8 2-1.8 2.9-2.8 5.8-7.6 5.8-20.4.1-28-2.8-3.8-7.2-6.2-11.9-6.3-10.8-.6-18.4 7.6-18.4 20.1zM331.6 177c0 15.5.1 31 0 46.5.1 7.1-5.5 13-12.6 13.2-1.2 0-2.5-.1-3.7-.4-5-1.3-8.8-6.6-8.8-12.9v-79.5c0-4.7-.1-9.3 0-14 .1-7.7 5-12.7 12.4-12.7 7.6-.1 12.7 4.9 12.7 12.9.1 15.6 0 31.3 0 46.9z" />
-                      <path class="st0"
-                        d="M235.7 196.3c-.1-14.1 7.6-22.6 18.5-22 4.7.2 9.1 2.5 11.9 6.4 5.6 7.5 5.6 20.1 0 27.7-5.4 7.2-15.7 8.7-23 3.3-1.2-.9-2.3-2-3.3-3.3-2.5-3.5-3.9-7.7-4.1-12.1zM365.5 194.5c0-12.4 7.6-20.7 18.4-20.1 4.7.1 9.1 2.5 11.9 6.3 5.7 7.6 5.7 20.5-.1 28-5.6 7.1-16 8.3-23.1 2.7-1.1-.8-2-1.8-2.8-2.9-3-4.1-4.4-9-4.3-14z" />
-                      <path class="st3"
-                        d="M66 1h328.1c35.9 0 65 29.1 65 65v303c0 35.9-29.1 65-65 65H66c-35.9 0-65-29.1-65-65V66C1 30.1 30.1 1 66 1z" />
-                    </svg>
-                    <a href class="flex">
-                      <span class="text-left"> Làm đẹp từ gốc </span>
-                    </a>
-                  </li>
-                </ul>
-              </div>
-            </div>
-          </footer>
-            <a href="https://www.facebook.com/messages/t/251528038040215">
-
-                <div
-                  class="fixed bottom-8 right-8 cursor-pointer bg-dark-blue p-4 rounded-full">
-                  <!-- You can use an icon or any content for the chatbox icon -->
-                  <svg xmlns="http://www.w3.org/2000/svg" fill="none"
-                    viewBox="0 0 24 24" stroke-width="2.0" stroke="white"
-                    class="w-6 h-6 ">
-                    <path stroke-linecap="round" stroke-linejoin="round"
-                      d="M8.625 12a.375.375 0 1 1-.75 0 .375.375 0 0 1 .75 0Zm0 0H8.25m4.125 0a.375.375 0 1 1-.75 0 .375.375 0 0 1 .75 0Zm0 0H12m4.125 0a.375.375 0 1 1-.75 0 .375.375 0 0 1 .75 0Zm0 0h-.375M21 12c0 4.556-4.03 8.25-9 8.25a9.764 9.764 0 0 1-2.555-.337A5.972 5.972 0 0 1 5.41 20.97a5.969 5.969 0 0 1-.474-.065 4.48 4.48 0 0 0 .978-2.025c.09-.457-.133-.901-.467-1.226C3.93 16.178 3 14.189 3 12c0-4.556 4.03-8.25 9-8.25s9 3.694 9 8.25Z" />
-                  </svg>
-          
-                </div>
-              </a>
         </div>
-    </body>
-    <script>
-        var slideIndex = 1;
-        showDivs(slideIndex);
-      
-        function plusDivs(n) {
-          showDivs(slideIndex += n);
-        }
-      
-        function showDivs(n) {
-          var i;
-          var x = document.getElementsByClassName("allSlides");
-          if (n > x.length) { slideIndex = 1 }
-          if (n < 1) { slideIndex = x.length }
-          for (i = 0; i < x.length; i++) {
-            x[i].style.display = "none";
-          }
-          x[slideIndex - 1].style.display = "block";
-        }
-      </script>
-        <script
-          src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-element-bundle.min.js">
-       // swiper element
-       const swiperEl = document.querySelector('swiper-container');
-      
-      // swiper parameters
-      const swiperParams = {
-        virtual: {
-          // virtual slides
-          slides: ['Slide 1', 'Slide 2', 'Slide 3'],
-      
+        <!-- 4 tags -->
+        <ul id="ct-top-menu"
+          class="ct-screen-header:basis-4/7 hidden ct-screen-header:flex items-center ct-screen-header:justify-end gap-8 uppercase text-gray-600 font-medium">
+          <a href="/index.html#story">
+
+            <li class="ct-top-menu-item">Giới thiệu</li>
+          </a>
+          <a href="/index.html#khoa-dao-tao">
+
+            <li class="ct-top-menu-item">Khóa đào tạo</li>
+          </a>
+          <a href="/index.html#doi-ngu-chuyen-gia">
+
+            <li class="ct-top-menu-item">
+              Đội ngũ chuyên gia
+            </li>
+          </a>
+          <a href="/index.html#tin-tuc">
+
+            <li class="ct-top-menu-item">Tin tức</li>
+          </a>
+        </ul>
+
+        <!-- Contact -->
+        <ul
+          class="ct-screen-header:basis-2/7 hidden ct-screen-header:flex justify-end ct-screen-header:justify-start items-center  uppercasetext-gray-500 font-medium gap-8">
+          <!-- Hotline -->
+          <li class="border-2 rounded-2xl bg-dark-blue p-1 mr-2">
+            <a href="tel:0961842650" class="flex items-center">
+              <svg xmlns="http://www.w3.org/2000/svg" fill="white" viewBox="0 0 24 24" stroke-width="1.5" stroke="none"
+                class="ct-icon">
+                <path stroke-linecap="round" stroke-linejoin="round"
+                  d="M20.25 3.75v4.5m0-4.5h-4.5m4.5 0-6 6m3 12c-8.284 0-15-6.716-15-15V4.5A2.25 2.25 0 0 1 4.5 2.25h1.372c.516 0 .966.351 1.091.852l1.106 4.423c.11.44-.054.902-.417 1.173l-1.293.97a1.062 1.062 0 0 0-.38 1.21 12.035 12.035 0 0 0 7.143 7.143c.441.162.928-.004 1.21-.38l.97-1.293a1.125 1.125 0 0 1 1.173-.417l4.423 1.106c.5.125.852.575.852 1.091V19.5a2.25 2.25 0 0 1-2.25 2.25h-2.25Z" />
+              </svg>
+
+              <span class="mx-2 text-white text-lg">096 184 26 50</span>
+            </a>
+          </li>
+          <!-- Dang ky ngay -->
+          <li class="border-2 rounded-2xl p-1 bg-red-600 ">
+            <a href="#dang-ky-ngay" class="flex items-center">
+              <svg xmlns="http://www.w3.org/2000/svg" fill="white" viewBox="0 0 24 24" stroke-width="1.5" stroke="white"
+                class="w-6 h-6">
+                <path stroke-linecap="round" stroke-linejoin="round"
+                  d="M8.625 12a.375.375 0 1 1-.75 0 .375.375 0 0 1 .75 0Zm0 0H8.25m4.125 0a.375.375 0 1 1-.75 0 .375.375 0 0 1 .75 0Zm0 0H12m4.125 0a.375.375 0 1 1-.75 0 .375.375 0 0 1 .75 0Zm0 0h-.375M21 12c0 4.556-4.03 8.25-9 8.25a9.764 9.764 0 0 1-2.555-.337A5.972 5.972 0 0 1 5.41 20.97a5.969 5.969 0 0 1-.474-.065 4.48 4.48 0 0 0 .978-2.025c.09-.457-.133-.901-.467-1.226C3.93 16.178 3 14.189 3 12c0-4.556 4.03-8.25 9-8.25s9 3.694 9 8.25Z" />
+              </svg>
+              <span class="mx-2 text-white text-lg">Đăng ký ngay</span>
+            </a>
+          </li>
+          <!-- So Hotline -->
+        </ul>
+        <!-- Menu Responsive -->
+        <div class="basis-4/7 ct-screen-header:hidden flex justify-end items-center cursor-pointer px-3 sm:px-8">
+          <svg id="ct-toggle-top-menu-icon" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+            stroke-width="1.5" stroke="currentColor" class="ct-icon">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
+          </svg>
+        </div>
+      </nav>
+    </header>
+
+    <main class="mb-20 ">
+      <div
+        class="slider w-auto bg-[url('./assets/bg-darkblue.jpeg')] bg-cover bf-no-repeat bg-bottom mb-4 flex  py-6 text-white">
+        <div class="flex flex-col items-start w-[60%] mx-auto">
+          <h1 class="mb-10 text-7xl mx-auto iphone-400px:mx-0 ">Khoá học gội đầu dưỡng sinh trị liệu từ gốc </h1>
+          <p class="mb-20 text-2xl  mx-auto iphone-400px:mx-0">🗞️Gội đầu dưỡng sinh trị liệu ngọc thủy. <br>
+            🗞️Gội đầu dưỡng sinh trị liệu đau đầu <br>
+            🗞️Gội đầu dưỡng sinh trị liệu đau vai gáy cổ. <br>
+            🗞️Gội đầu dưỡng sinh trị liệu mất ngủ. <br>
+            🗞️Gội đầu dưỡng sinh trị liệu chuông xoay Nepal. <br>
+            🗞️ Gội đầu dưỡng sinh trị liệu nấm da đầu <br>
+            🗞️ Gội đầu dưỡng sinh trị liệu kích mọc tóc.</p>
+          <div class="border-2 iphone-400px:p-2  mb-16 p-2 text-sm iphone-400px:text-lg">
+            <ul class="flex lg:flex-row gap-10  flex-wrap justify-center items-center ">
+              <li class="flex flex-col">
+                <h1>
+                  Khai giảng
+                </h1>
+                <p>25.03.2024</p>
+              </li>
+              <li class="flex flex-col">
+                <h1>
+                  Giảng viên
+                </h1>
+                <p>CEO Cao Thị Lệ Thuỷ </p>
+              </li>
+              <li class="flex flex-col">
+                <h1>
+                  Học phí
+                </h1>
+                <p>8.890.000 VND
+                </p>
+              </li>
+              <li class="flex flex-col">
+                <h1>
+                  Thời lượng khoá học
+                </h1>
+                <p>? </p>
+              </li>
+              <li class="flex flex-col">
+                <h1>
+                  Hình thức học
+                </h1>
+                <p>Online</p>
+              </li>
+              <li class="flex flex-col">
+                <h1>
+                  Ngày kết thúc
+                </h1>
+                <p>25.03.2024</p>
+              </li>
+
+            </ul>
+          </div>
+          <div class="flex justify-center leading-10 mx-auto sm:mx-0">
+            <a href="index.html#dang-ky-ngay"
+              class="uppercase bg-white text-gray-900 w-max tracking-wider py-4 px-8 text-sm font-semibold cursor-pointer hover:bg-opacity-95">
+
+              Đăng ký ngay
+
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <div id="doi-ngu-chuyen-gia">
+        <div class="ct-subheadline">
+          <div class="ct-subheadline-deco-line"></div>
+          <div class="ct-subheadline-label">Giảng viên khoá học</div>
+          <div class="ct-subheadline-deco-line"></div>
+        </div>
+
+        <div class="prof w-[95%] lg:w-[65%] mx-auto mb-10 ">
+          <swiper-container pagination="true">
+            <swiper-slide>
+              <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 lg:gap-4">
+                <div class="ct-product-card">
+                  <div class=" h-[400px] bg-[url('./assets/staff1.jpg')] bg-cover bg-no-repeat bg-center">
+
+                    <div
+                      class="w-full h-full hover:bg-gray-900 hover:bg-opacity-10 hover:transition-all hover:ease-in-out hover:duration-400 relative group">
+
+                    </div>
+
+
+
+                  </div>
+                  <div class="text-center my-8">
+
+                    <div class="text-xl mb-3 hover:text-dark-blue">Chuyên
+                      gia
+                      1</div>
+
+                    <div class>
+
+                      <span class="text-base text-black">Vị trí</span>
+                    </div>
+                  </div>
+                </div>
+                <div class="ct-product-card">
+                  <div class=" h-[400px] bg-[url('./assets/staff2.jpg')] bg-cover bg-no-repeat bg-center">
+
+                    <div
+                      class="w-full h-full hover:bg-gray-900 hover:bg-opacity-10 hover:transition-all hover:ease-in-out hover:duration-400 relative group">
+
+                    </div>
+
+
+                  </div>
+                  <div class="text-center my-8">
+
+                    <div class="text-xl mb-3 hover:text-dark-blue">Chuyên
+                      gia
+                      2</div>
+
+                    <div class>
+
+                      <span class="text-base text-black">Vị trí</span>
+                    </div>
+                  </div>
+                </div>
+                <div class="ct-product-card">
+                  <div class=" h-[400px] bg-[url('./assets/staff3.jpg')] bg-cover bg-no-repeat bg-center">
+
+                    <div
+                      class="w-full h-full hover:bg-gray-900 hover:bg-opacity-10 hover:transition-all hover:ease-in-out hover:duration-400 relative group">
+
+                    </div>
+
+
+                  </div>
+                  <div class="text-center my-8">
+
+                    <div class="text-xl mb-3 hover:text-dark-blue">Chuyên
+                      gia
+                      3</div>
+
+                    <div class>
+
+                      <span class="text-base text-black">Vị trí</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </swiper-slide>
+            <swiper-slide>
+              <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 lg:gap-4">
+                <div class="ct-product-card">
+                  <div class=" h-[400px] bg-[url('./assets/staff1.jpg')] bg-cover bg-no-repeat bg-center">
+                    <a href="#" alt="lamdeptugoc">
+                      <div
+                        class="w-full h-full hover:bg-gray-900 hover:bg-opacity-10 hover:transition-all hover:ease-in-out hover:duration-400 relative group">
+
+                      </div>
+
+                    </a>
+
+                  </div>
+                  <div class="text-center my-8">
+
+                    <div class="text-xl mb-3 hover:text-dark-blue">Chuyên
+                      gia
+                      1</div>
+
+                    <div class>
+
+                      <span class="text-base text-black">Vị trí</span>
+                    </div>
+                  </div>
+                </div>
+                <div class="ct-product-card">
+                  <div class=" h-[400px] bg-[url('./assets/staff2.jpg')] bg-cover bg-no-repeat bg-center">
+
+                    <div
+                      class="w-full h-full hover:bg-gray-900 hover:bg-opacity-10 hover:transition-all hover:ease-in-out hover:duration-400 relative group">
+
+                    </div>
+
+
+                  </div>
+                  <div class="text-center my-8">
+
+                    <div class="text-xl mb-3 hover:text-dark-blue">Chuyên
+                      gia
+                      2</div>
+
+                    <div class>
+
+                      <span class="text-base text-black">Vị trí</span>
+                    </div>
+                  </div>
+                </div>
+                <div class="ct-product-card">
+                  <div class=" h-[400px] bg-[url('./assets/staff3.jpg')] bg-cover bg-no-repeat bg-center">
+
+                    <div
+                      class="w-full h-full hover:bg-gray-900 hover:bg-opacity-10 hover:transition-all hover:ease-in-out hover:duration-400 relative group">
+
+                    </div>
+
+
+                  </div>
+                  <div class="text-center my-8">
+
+                    <div class="text-xl mb-3 hover:text-dark-blue">Chuyên
+                      gia
+                      3</div>
+
+                    <div class>
+
+                      <span class="text-base text-black">Vị trí</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </swiper-slide>
+          </swiper-container>
+        </div>
+
+      </div>
+      <div class="flex flex-col " id="khoa-dao-tao">
+
+        <div class="ct-subheadline">
+          <div class="ct-subheadline-deco-line"></div>
+          <div class="ct-subheadline-label">Nội dung khóa học</div>
+          <div class="ct-subheadline-deco-line"></div>
+        </div>
+
+        <div class=" w-[95%] lg:w-[65%] mx-auto mb-10">
+          <swiper-container pagination="true">
+            <swiper-slide>
+
+
+
+              <div class="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-4 mb-10">
+                <div class="ct-product-card b">
+                  <div
+                    class=" h-[300px] sm:h-[400px] bg-[url('./assets/mentor_lan_da_tu_goc.png')] bg-cover bg-no-repeat bg-center">
+                    <a href="noi-dung-khoa-hoc-1.html" alt="lamdeptugoc" target="_blank">
+                      <div
+                        class="w-full h-full hover:bg-gray-900 hover:bg-opacity-10 hover:transition-all hover:ease-in-out hover:duration-400 relative group">
+
+                        <div
+                          class="absolute bg-white text-gray-900 w-11/12 bottom-4 left-1/2 -translate-x-1/2 hidden group-hover:block group-hover:animate-fadeIn text-center uppercase tracking tracking-wider py-4 px-8 text-[13px] font-semibold cursor-pointer hover:bg-opacity-90 ">
+                          Chi Tiết</div>
+                      </div>
+
+                    </a>
+
+                  </div>
+                  <div class="text-center mt-8">
+                    <a alt="ct-product">
+                      <div class="text-xl mb-3 hover:text-dark-blue">Khoá học Mentor làn da từ gốc</div>
+                    </a>
+                    <div class>
+
+                      <span class=" text-gray-800">38.890.000 VND</span>
+                    </div>
+                  </div>
+                </div>
+                <div class="ct-product-card ">
+                  <div class=" h-[300px] sm:h-[400px] bg-[url('./assets/massage.jpg')] bg-cover bg-no-repeat bg-center">
+                    <a href="noi-dung-khoa-hoc-2.html" alt="lamdeptugoc" target="_blank">
+                      <div
+                        class="w-full h-full hover:bg-gray-900 hover:bg-opacity-10 hover:transition-all hover:ease-in-out hover:duration-400 relative group">
+                        <!-- <div
+                          class="absolute w-[100px] bg-white py-2 px-4 top-3 right-3 text-center uppercase font-semibold text-red-600">
+                          ưu đãi</div> -->
+                        <div
+                          class="absolute bg-white text-gray-900 w-11/12 bottom-4 left-1/2 -translate-x-1/2 hidden group-hover:block group-hover:animate-fadeIn text-center uppercase tracking tracking-wider py-4 px-8 text-[13px] font-semibold cursor-pointer hover:bg-opacity-90 ">
+                          Chi Tiết</div>
+                      </div>
+
+                    </a>
+                  </div>
+                  <div class="text-center mt-8">
+                    <a href="#" alt="ct-product">
+                      <div class="text-xl mb-3 hover:text-dark-blue"> Khóc học Gội đầu dưỡng sinh trị liệu từ gốc
+                      </div>
+                    </a>
+                    <div class>
+                      <span class="text-lg text-dark-blue"> 8.890.000 VND</span>
+                      <!-- <span class="ml-2 text-gray-400 line-through">800.000
+                        VND</span> -->
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+
+
+              <div class="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-4">
+                <div class="ct-product-card">
+                  <div
+                    class=" h-[300px] sm:h-[400px] bg-[url('./assets/cham-soc-suc-khoe-duong-sinh.png')] bg-cover bg-no-repeat bg-center">
+                    <a href="noi-dung-khoa-hoc-3.html" alt="lamdeptugoc" target="_blank">
+                      <div
+                        class="w-full h-full hover:bg-gray-900 hover:bg-opacity-10 hover:transition-all hover:ease-in-out hover:duration-400 relative group">
+
+                        <div
+                          class="absolute bg-white text-gray-900 w-11/12 bottom-4 left-1/2 -translate-x-1/2 hidden group-hover:block group-hover:animate-fadeIn text-center uppercase tracking tracking-wider py-4 px-8 text-[13px] font-semibold cursor-pointer hover:bg-opacity-90 ">
+                          Chi Tiết</div>
+                      </div>
+
+                    </a>
+
+                  </div>
+                  <div class="text-center mt-8">
+                    <a href="#" alt="ct-product">
+                      <div class="text-xl mb-3 hover:text-dark-blue">Khoá học Dưỡng sinh chăm sóc sức khoẻ từ gốc
+                      </div>
+                    </a>
+                    <div class>
+
+                      <span class=" text-gray-800">18.890.000 VND</span>
+                    </div>
+                  </div>
+                </div>
+                <div class="ct-product-card">
+                  <div
+                    class=" h-[300px] sm:h-[400px] bg-[url('./assets/dao_tao_nang_luc_cap_1.png')] bg-cover bg-no-repeat bg-center">
+                    <a href="noi-dung-khoa-hoc-4.html" alt="lamdeptugoc" target="_blank">
+                      <div
+                        class="w-full h-full hover:bg-gray-900 hover:bg-opacity-10 hover:transition-all hover:ease-in-out hover:duration-400 relative group">
+                        <div
+                          class="absolute w-[100px] bg-white py-2 px-4 top-3 right-3 text-center uppercase font-semibold text-red-600">
+                          ưu đãi</div>
+                        <div
+                          class="absolute bg-white text-gray-900 w-11/12 bottom-4 left-1/2 -translate-x-1/2 hidden group-hover:block group-hover:animate-fadeIn text-center uppercase tracking tracking-wider py-4 px-8 text-[13px] font-semibold cursor-pointer hover:bg-opacity-90 ">
+                          Chi Tiết</div>
+                      </div>
+
+                    </a>
+                  </div>
+                  <div class="text-center mt-8">
+                    <a href="#" alt="ct-product">
+                      <div class="text-xl mb-3 hover:text-dark-blue">Khoá đào tạo năng lực
+                        Cấp độ 1</div>
+                    </a>
+                    <div class>
+                      <span class="text-lg text-dark-blue">389.000 VND</span>
+                      <span class="ml-2 text-gray-400 line-through">889.000
+                        VND</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+
+            </swiper-slide>
+
+            <swiper-slide>
+              <div class="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-4 mb-10">
+
+                <div class="ct-product-card">
+                  <div
+                    class=" h-[300px] sm:h-[400px] bg-[url('./assets/chua_lanh_nlp.png')] bg-cover bg-no-repeat bg-center">
+                    <a href="noi-dung-khoa-hoc-5.html" alt="lamdeptugoc" target="_blank">
+                      <div
+                        class="w-full h-full hover:bg-gray-900 hover:bg-opacity-10 hover:transition-all hover:ease-in-out hover:duration-400 relative group">
+
+                        <div
+                          class="absolute bg-white text-gray-900 w-11/12 bottom-4 left-1/2 -translate-x-1/2 hidden group-hover:block group-hover:animate-fadeIn text-center uppercase tracking tracking-wider py-4 px-8 text-[13px] font-semibold cursor-pointer hover:bg-opacity-90 ">
+                          Chi Tiết</div>
+                      </div>
+
+                    </a>
+
+                  </div>
+                  <div class="text-center mt-8">
+                    <a alt="ct-product">
+                      <div class="text-xl mb-3 hover:text-dark-blue">Khoá học chữa lành bằng NLP</div>
+                    </a>
+                    <div class>
+
+                      <span class=" text-gray-800">2.890.000 VND</span>
+                      <!-- <span class="ml-2 text-gray-400 line-through">889.000
+                    VND</span> -->
+                    </div>
+                  </div>
+
+                </div>
+                <div class="ct-product-card">
+                  <div
+                    class=" h-[300px] sm:h-[400px] bg-[url('./assets/khoa_dao_tao_spa.jpg')] bg-cover bg-no-repeat bg-center">
+                    <a href="noi-dung-khoa-hoc-6.html" alt="lamdeptugoc" target="_blank">
+                      <div
+                        class="w-full h-full hover:bg-gray-900 hover:bg-opacity-10 hover:transition-all hover:ease-in-out hover:duration-400 relative group">
+                        <div
+                          class="absolute w-[100px] bg-white py-2 px-4 top-3 right-3 text-center uppercase font-semibold text-red-600">
+                          ưu đãi</div>
+                        <div
+                          class="absolute bg-white text-gray-900 w-11/12 bottom-4 left-1/2 -translate-x-1/2 hidden group-hover:block group-hover:animate-fadeIn text-center uppercase tracking tracking-wider py-4 px-8 text-[13px] font-semibold cursor-pointer hover:bg-opacity-90 ">
+                          Chi Tiết</div>
+                      </div>
+
+                    </a>
+                  </div>
+                  <div class="text-center mt-8">
+                    <a href="#" alt="ct-product">
+                      <div class="text-xl mb-3 hover:text-dark-blue">Khoá đào tạo năng lực cơ bản
+                        nghề Spa</div>
+                    </a>
+                    <div class>
+                      <span class="text-lg text-dark-blue">389.000 VND</span>
+                      <span class="ml-2 text-gray-400 line-through">889.000
+                        VND</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-4">
+                <div class="ct-product-card">
+                  <div
+                    class=" h-[300px] sm:h-[400px] bg-[url('./assets/khoa_dao_tao_spa_nang_cao.jpg')] bg-cover bg-no-repeat bg-center">
+                    <a href="noi-dung-khoa-hoc-7.html" alt="lamdeptugoc" target="_blank">
+                      <div
+                        class="w-full h-full hover:bg-gray-900 hover:bg-opacity-10 hover:transition-all hover:ease-in-out hover:duration-400 relative group">
+
+                        <div
+                          class="absolute bg-white text-gray-900 w-11/12 bottom-4 left-1/2 -translate-x-1/2 hidden group-hover:block group-hover:animate-fadeIn text-center uppercase tracking tracking-wider py-4 px-8 text-[13px] font-semibold cursor-pointer hover:bg-opacity-90 ">
+                          Chi Tiết</div>
+                      </div>
+
+                    </a>
+
+                  </div>
+                  <div class="text-center mt-8">
+                    <a alt="ct-product">
+                      <div class="text-xl mb-3 hover:text-dark-blue">Khoá đào tạo năng lực nâng cao
+                        nghề Spa</div>
+                    </a>
+                    <div class>
+
+                      <span class=" text-gray-800">38.890.000 VND</span>
+                    </div>
+                  </div>
+                </div>
+                <div class="ct-product-card">
+                  <div
+                    class=" h-[300px] sm:h-[400px] bg-[url('./assets/duoc_my_pham_new.jpg')] bg-cover bg-no-repeat bg-center">
+                    <a href="noi-dung-khoa-hoc-8.html" alt="lamdeptugoc" target="_blank">
+                      <div
+                        class="w-full h-full hover:bg-gray-900 hover:bg-opacity-10 hover:transition-all hover:ease-in-out hover:duration-400 relative group">
+                        <div
+                          class="absolute w-[100px] bg-white py-2 px-4 top-3 right-3 text-center uppercase font-semibold text-red-600">
+                          ưu đãi</div>
+                        <div
+                          class="absolute bg-white text-gray-900 w-11/12 bottom-4 left-1/2 -translate-x-1/2 hidden group-hover:block group-hover:animate-fadeIn text-center uppercase tracking tracking-wider py-4 px-8 text-[13px] font-semibold cursor-pointer hover:bg-opacity-90 ">
+                          Chi Tiết</div>
+                      </div>
+
+                    </a>
+                  </div>
+                  <div class="text-center mt-8">
+                    <a href="#" alt="ct-product">
+                      <div class="text-xl mb-3 hover:text-dark-blue"> Khoá dược mỹ phẩm cho người mới bắt đầu
+                      </div>
+                    </a>
+                    <div class>
+                      <span class="text-lg text-dark-blue">5.000.000 VND</span>
+                      <span class="ml-2 text-gray-400 line-through">8.000.000 VND
+                        VND</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </swiper-slide>
+
+            <swiper-slide>
+              <div class="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-4 mb-10">
+                <div class="ct-product-card">
+                  <div
+                    class=" h-[300px] sm:h-[400px] bg-[url('./assets/tham_my_da_lieu_nang_cao.jpg')] bg-cover bg-no-repeat bg-center">
+                    <a href="noi-dung-khoa-hoc-9.html" alt="lamdeptugoc" target="_blank">
+                      <div
+                        class="w-full h-full hover:bg-gray-900 hover:bg-opacity-10 hover:transition-all hover:ease-in-out hover:duration-400 relative group">
+
+                        <div
+                          class="absolute bg-white text-gray-900 w-11/12 bottom-4 left-1/2 -translate-x-1/2 hidden group-hover:block group-hover:animate-fadeIn text-center uppercase tracking tracking-wider py-4 px-8 text-[13px] font-semibold cursor-pointer hover:bg-opacity-90 ">
+                          Chi Tiết</div>
+                      </div>
+
+                    </a>
+
+                  </div>
+                  <div class="text-center mt-8">
+                    <a alt="ct-product">
+                      <div class="text-xl mb-3 hover:text-dark-blue">Khoá thẩm mỹ da liễu nâng cao</div>
+                    </a>
+                    <div class>
+
+                      <span class=" text-gray-800">28.890.000 VND</span>
+                    </div>
+                  </div>
+                </div>
+                <div class="ct-product-card">
+                  <div
+                    class=" h-[300px] sm:h-[400px] bg-[url('./assets/tri_lieu_da_tu_goc.jpg')] bg-cover bg-no-repeat bg-center">
+                    <a href="noi-dung-khoa-hoc-10.html" alt="lamdeptugoc" target="_blank">
+                      <div
+                        class="w-full h-full hover:bg-gray-900 hover:bg-opacity-10 hover:transition-all hover:ease-in-out hover:duration-400 relative group">
+                        <div
+                          class="absolute w-[100px] bg-white py-2 px-4 top-3 right-3 text-center uppercase font-semibold text-red-600">
+                          ưu đãi</div>
+                        <div
+                          class="absolute bg-white text-gray-900 w-11/12 bottom-4 left-1/2 -translate-x-1/2 hidden group-hover:block group-hover:animate-fadeIn text-center uppercase tracking tracking-wider py-4 px-8 text-[13px] font-semibold cursor-pointer hover:bg-opacity-90 ">
+                          Chi Tiết</div>
+                      </div>
+
+                    </a>
+                  </div>
+                  <div class="text-center mt-8">
+                    <a href="#" alt="ct-product">
+                      <div class="text-xl mb-3 hover:text-dark-blue">Khoá trị liệu bệnh lý da từ gốc </div>
+                    </a>
+                    <div class>
+                      <span class="text-lg text-dark-blue">8.000.000 VND</span>
+                      <span class="ml-2 text-gray-400 line-through">12.000.000
+                        VND</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-4">
+
+
+                <div class="ct-product-card">
+                  <div
+                    class=" h-[300px] sm:h-[400px] bg-[url('./assets/tri_mun_tu_goc.jpg')] bg-cover bg-no-repeat bg-center">
+                    <a href="noi-dung-khoa-hoc-11.html" alt="lamdeptugoc" target="_blank">
+                      <div
+                        class="w-full h-full hover:bg-gray-900 hover:bg-opacity-10 hover:transition-all hover:ease-in-out hover:duration-400 relative group">
+                        <div
+                          class="absolute w-[100px] bg-white py-2 px-4 top-3 right-3 text-center uppercase font-semibold text-red-600">
+                          ưu đãi</div>
+                        <div
+                          class="absolute bg-white text-gray-900 w-11/12 bottom-4 left-1/2 -translate-x-1/2 hidden group-hover:block group-hover:animate-fadeIn text-center uppercase tracking tracking-wider py-4 px-8 text-[13px] font-semibold cursor-pointer hover:bg-opacity-90 ">
+                          Chi Tiết</div>
+                      </div>
+
+                    </a>
+                  </div>
+                  <div class="text-center mt-8">
+                    <a href="#" alt="ct-product">
+                      <div class="text-xl mb-3 hover:text-dark-blue">Khoá trị mụn từ gốc
+                      </div>
+                    </a>
+                    <div class>
+                      <span class="text-lg text-dark-blue">2.890.000 VND</span>
+                      <span class="ml-2 text-gray-400 line-through">6.000.000
+                        VND</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+
+
+
+
+
+
+
+
+            </swiper-slide>
+
+
+
+          </swiper-container>
+        </div>
+
+      </div>
+
+    </main>
+
+    <footer class="w-[90%] mx-auto p-10 border-t-2 border-dark-blue border-opacity-50 ">
+      <div class="flex flex-col lg:flex-row  text-center lg:text-left lg:gap-8 justify-evenly">
+
+        <!-- Footer Logo -->
+        <div class="footer_logo basis-1/7 flex justify-center items-center lg:mr-20 lg:mb-0 mb-4 ">
+          <img src="./assets/logo_lamdeptugoc.png" alt="footer_logo" width="160" height="286" />
+        </div>
+
+        <!-- Footer Address -->
+        <div
+          class="footer_address lg:basis-4/7 tracking-wider flex flex-col justify-center lg:items-start items-center lg:mr-10 lg:mb-0 mb-4">
+          <h3 class="font-medium uppercase text-xl mb-10 lg:mb-12 text-center flex-grow-[1]">
+            Thủy Cao - Spa Pensée
+          </h3>
+
+          <div class="flex flex-col gap-8 items-start justify-center flex-grow-[3] ">
+            <a class="ct-footer-icon-text " target=”_blank”
+              href="https://www.google.com/maps/place/%C4%90%E1%BA%B7ng+Thanh+S%E1%BB%AD,+%C3%94+M%C3%B4n,+C%E1%BA%A7n+Th%C6%A1,+Vietnam/@10.1225388,105.6594298,21z/data=!4m6!3m5!1s0x31a08443de4ca8af:0x1ff4eb846390fb28!8m2!3d10.1225612!4d105.6594624!16s%2Fg%2F11b77lkdkp?entry=ttu">
+
+              <div class="flex flex-row">
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                  stroke="currentColor" class="w-6 h-6 mr-2">
+                  <path stroke-linecap="round" stroke-linejoin="round" d="M15 10.5a3 3 0 1 1-6 0 3 3 0 0 1 6 0Z" />
+                  <path stroke-linecap="round" stroke-linejoin="round"
+                    d="M19.5 10.5c0 7.142-7.5 11.25-7.5 11.25S4.5 17.642 4.5 10.5a7.5 7.5 0 1 1 15 0Z" />
+                </svg>
+
+                <p class="text-center">353 Đặng Thanh Sử, Cần Thơ</p>
+              </div>
+            </a>
+
+            <a class="ct-footer-icon-text" href="tel:096 184 26 50">
+              <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                stroke="currentColor" class="w-6 h-6 mr-4">
+                <path stroke-linecap="round" stroke-linejoin="round"
+                  d="M2.25 6.75c0 8.284 6.716 15 15 15h2.25a2.25 2.25 0 0 0 2.25-2.25v-1.372c0-.516-.351-.966-.852-1.091l-4.423-1.106c-.44-.11-.902.055-1.173.417l-.97 1.293c-.282.376-.769.542-1.21.38a12.035 12.035 0 0 1-7.143-7.143c-.162-.441.004-.928.38-1.21l1.293-.97c.363-.271.527-.734.417-1.173L6.963 3.102a1.125 1.125 0 0 0-1.091-.852H4.5A2.25 2.25 0 0 0 2.25 4.5v2.25Z" />
+              </svg>
+              <span class="text-center">096 184 26 50</span>
+            </a>
+
+            <div class="ct-footer-icon-text">
+              <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                stroke="currentColor" class="w-6 h-6 stroke-gray-600 mr-4">
+                <path stroke-linecap="round" stroke-linejoin="round"
+                  d="M21.75 6.75v10.5a2.25 2.25 0 0 1-2.25 2.25h-15a2.25 2.25 0 0 1-2.25-2.25V6.75m19.5 0A2.25 2.25 0 0 0 19.5 4.5h-15a2.25 2.25 0 0 0-2.25 2.25m19.5 0v.243a2.25 2.25 0 0 1-1.07 1.916l-7.5 4.615a2.25 2.25 0 0 1-2.36 0L3.32 8.91a2.25 2.25 0 0 1-1.07-1.916V6.75" />
+              </svg>
+
+              <span class="text-gray-600">lamdeptugoc@gmail.com</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Footer Hotline -->
+        <div
+          class="footer_hotline lg:basis-2/7 tracking-wider flex flex-col justify-center lg:items-start lg:mt-0 mt-6 items-center ">
+          <h3 class="font-medium uppercase text-xl mb-10 lg:mb-12 text-center flex-grow ">
+            Liên hệ
+          </h3>
+          <ul class="flex flex-col gap-8   items-start flex-grow-[3]">
+            <li class="ct-footer-icon-text ">
+
+              <a class="flex " target=”_blank” href="https://www.facebook.com/profile.php?id=61556756640853">
+                <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="50" height="100" viewBox="0 0 50 50"
+                  style="fill: #333" class="ct-icon mr-2 mt-[3px] ">
+                  <path
+                    d="M41,4H9C6.24,4,4,6.24,4,9v32c0,2.76,2.24,5,5,5h32c2.76,0,5-2.24,5-5V9C46,6.24,43.76,4,41,4z M37,19h-2c-2.14,0-3,0.5-3,2 v3h5l-1,5h-4v15h-5V29h-4v-5h4v-3c0-4,2-7,6-7c2.9,0,4,1,4,1V19z">
+                  </path>
+                </svg>
+                <span class="text-left">Cộng đồng làm đẹp từ gốc</span>
+              </a>
+            </li>
+            <li class="ct-footer-icon-text ">
+              <svg style="color: #333" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" class="ct-icon mr-2">
+                <!--! Font Awesome Free 6.1.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc. -->
+                <path
+                  d="M256.55 8C116.52 8 8 110.34 8 248.57c0 72.3 29.71 134.78 78.07 177.94 8.35 7.51 6.63 11.86 8.05 58.23A19.92 19.92 0 0 0 122 502.31c52.91-23.3 53.59-25.14 62.56-22.7C337.85 521.8 504 423.7 504 248.57 504 110.34 396.59 8 256.55 8zm149.24 185.13l-73 115.57a37.37 37.37 0 0 1-53.91 9.93l-58.08-43.47a15 15 0 0 0-18 0l-78.37 59.44c-10.46 7.93-24.16-4.6-17.11-15.67l73-115.57a37.36 37.36 0 0 1 53.91-9.93l58.06 43.46a15 15 0 0 0 18 0l78.41-59.38c10.44-7.98 24.14 4.54 17.09 15.62z"
+                  fill="#333"></path>
+              </svg>
+              <a href="https://www.facebook.com/messages/t/251528038040215" class="flex justify-start">
+                <span class="text-left"> Inbox Cộng đồng làm đẹp từ gốc </span>
+              </a>
+            </li>
+            <li class="ct-footer-icon-text">
+              <svg class="ct-icon mr-2" height="2372" id="Layer_1" viewBox="0 0 460.1 436.6" width="2500"
+                xmlns="http://www.w3.org/2000/svg">
+                <style>
+                  .st0 {
+                    fill: #fdfefe;
+                  }
+
+                  .st1 {
+                    fill: #333;
+                  }
+
+                  .st2 {
+                    fill: #333;
+                  }
+
+                  .st3 {
+                    fill: none;
+                    stroke: #333;
+                    stroke-width: 2;
+                    stroke-miterlimit: 10;
+                  }
+                </style>
+                <title />
+                <path class="st0"
+                  d="M82.6 380.9c-1.8-.8-3.1-1.7-1-3.5 1.3-1 2.7-1.9 4.1-2.8 13.1-8.5 25.4-17.8 33.5-31.5 6.8-11.4 5.7-18.1-2.8-26.5C69 269.2 48.2 212.5 58.6 145.5 64.5 107.7 81.8 75 107 46.6c15.2-17.2 33.3-31.1 53.1-42.7 1.2-.7 2.9-.9 3.1-2.7-.4-1-1.1-.7-1.7-.7-33.7 0-67.4-.7-101 .2C28.3 1.7.5 26.6.6 62.3c.2 104.3 0 208.6 0 313 0 32.4 24.7 59.5 57 60.7 27.3 1.1 54.6.2 82 .1 2 .1 4 .2 6 .2H290c36 0 72 .2 108 0 33.4 0 60.5-27 60.5-60.3v-.6-58.5c0-1.4.5-2.9-.4-4.4-1.8.1-2.5 1.6-3.5 2.6-19.4 19.5-42.3 35.2-67.4 46.3-61.5 27.1-124.1 29-187.6 7.2-5.5-2-11.5-2.2-17.2-.8-8.4 2.1-16.7 4.6-25 7.1-24.4 7.6-49.3 11-74.8 6zm72.5-168.5c1.7-2.2 2.6-3.5 3.6-4.8 13.1-16.6 26.2-33.2 39.3-49.9 3.8-4.8 7.6-9.7 10-15.5 2.8-6.6-.2-12.8-7-15.2-3-.9-6.2-1.3-9.4-1.1-17.8-.1-35.7-.1-53.5 0-2.5 0-5 .3-7.4.9-5.6 1.4-9 7.1-7.6 12.8 1 3.8 4 6.8 7.8 7.7 2.4.6 4.9.9 7.4.8 10.8.1 21.7 0 32.5.1 1.2 0 2.7-.8 3.6 1-.9 1.2-1.8 2.4-2.7 3.5-15.5 19.6-30.9 39.3-46.4 58.9-3.8 4.9-5.8 10.3-3 16.3s8.5 7.1 14.3 7.5c4.6.3 9.3.1 14 .1 16.2 0 32.3.1 48.5-.1 8.6-.1 13.2-5.3 12.3-13.3-.7-6.3-5-9.6-13-9.7-14.1-.1-28.2 0-43.3 0zm116-52.6c-12.5-10.9-26.3-11.6-39.8-3.6-16.4 9.6-22.4 25.3-20.4 43.5 1.9 17 9.3 30.9 27.1 36.6 11.1 3.6 21.4 2.3 30.5-5.1 2.4-1.9 3.1-1.5 4.8.6 3.3 4.2 9 5.8 14 3.9 5-1.5 8.3-6.1 8.3-11.3.1-20 .2-40 0-60-.1-8-7.6-13.1-15.4-11.5-4.3.9-6.7 3.8-9.1 6.9zm69.3 37.1c-.4 25 20.3 43.9 46.3 41.3 23.9-2.4 39.4-20.3 38.6-45.6-.8-25-19.4-42.1-44.9-41.3-23.9.7-40.8 19.9-40 45.6zm-8.8-19.9c0-15.7.1-31.3 0-47 0-8-5.1-13-12.7-12.9-7.4.1-12.3 5.1-12.4 12.8-.1 4.7 0 9.3 0 14v79.5c0 6.2 3.8 11.6 8.8 12.9 6.9 1.9 14-2.2 15.8-9.1.3-1.2.5-2.4.4-3.7.2-15.5.1-31 .1-46.5z" />
+                <path class="st1"
+                  d="M139.5 436.2c-27.3 0-54.7.9-82-.1-32.3-1.3-57-28.4-57-60.7 0-104.3.2-208.6 0-313C.5 26.7 28.4 1.8 60.5.9c33.6-.9 67.3-.2 101-.2.6 0 1.4-.3 1.7.7-.2 1.8-2 2-3.1 2.7-19.8 11.6-37.9 25.5-53.1 42.7-25.1 28.4-42.5 61-48.4 98.9-10.4 66.9 10.5 123.7 57.8 171.1 8.4 8.5 9.5 15.1 2.8 26.5-8.1 13.7-20.4 23-33.5 31.5-1.4.8-2.8 1.8-4.2 2.7-2.1 1.8-.8 2.7 1 3.5.4.9.9 1.7 1.5 2.5 11.5 10.2 22.4 21.1 33.7 31.5 5.3 4.9 10.6 10 15.7 15.1 2.1 1.9 5.6 2.5 6.1 6.1z" />
+                <path class="st2"
+                  d="M139.5 436.2c-.5-3.5-4-4.1-6.1-6.2-5.1-5.2-10.4-10.2-15.7-15.1-11.3-10.4-22.2-21.3-33.7-31.5-.6-.8-1.1-1.6-1.5-2.5 25.5 5 50.4 1.6 74.9-5.9 8.3-2.5 16.6-5 25-7.1 5.7-1.5 11.7-1.2 17.2.8 63.4 21.8 126 19.8 187.6-7.2 25.1-11.1 48-26.7 67.4-46.2 1-1 1.7-2.5 3.5-2.6.9 1.4.4 2.9.4 4.4v58.5c.2 33.4-26.6 60.6-60 60.9h-.5c-36 .2-72 0-108 0H145.5c-2-.2-4-.3-6-.3z" />
+                <path class="st1"
+                  d="M155.1 212.4c15.1 0 29.3-.1 43.4 0 7.9.1 12.2 3.4 13 9.7.9 7.9-3.7 13.2-12.3 13.3-16.2.2-32.3.1-48.5.1-4.7 0-9.3.2-14-.1-5.8-.3-11.5-1.5-14.3-7.5s-.8-11.4 3-16.3c15.4-19.6 30.9-39.3 46.4-58.9.9-1.2 1.8-2.4 2.7-3.5-1-1.7-2.4-.9-3.6-1-10.8-.1-21.7 0-32.5-.1-2.5 0-5-.3-7.4-.8-5.7-1.3-9.2-7-7.9-12.6.9-3.8 3.9-6.9 7.7-7.8 2.4-.6 4.9-.9 7.4-.9 17.8-.1 35.7-.1 53.5 0 3.2-.1 6.3.3 9.4 1.1 6.8 2.3 9.7 8.6 7 15.2-2.4 5.7-6.2 10.6-10 15.5-13.1 16.7-26.2 33.3-39.3 49.8-1.1 1.3-2.1 2.6-3.7 4.8z" />
+                <path class="st1"
+                  d="M271.1 159.8c2.4-3.1 4.9-6 9-6.8 7.9-1.6 15.3 3.5 15.4 11.5.3 20 .2 40 0 60 0 5.2-3.4 9.8-8.3 11.3-5 1.9-10.7.4-14-3.9-1.7-2.1-2.4-2.5-4.8-.6-9.1 7.4-19.4 8.7-30.5 5.1-17.8-5.8-25.1-19.7-27.1-36.6-2.1-18.3 4-33.9 20.4-43.5 13.6-8.1 27.4-7.4 39.9 3.5zm-35.4 36.5c.2 4.4 1.6 8.6 4.2 12.1 5.4 7.2 15.7 8.7 23 3.3 1.2-.9 2.3-2 3.3-3.3 5.6-7.6 5.6-20.1 0-27.7-2.8-3.9-7.2-6.2-11.9-6.3-11-.7-18.7 7.8-18.6 21.9zM340.4 196.9c-.8-25.7 16.1-44.9 40.1-45.6 25.5-.8 44.1 16.3 44.9 41.3.8 25.3-14.7 43.2-38.6 45.6-26.1 2.6-46.8-16.3-46.4-41.3zm25.1-2.4c-.2 5 1.3 9.9 4.3 14 5.5 7.2 15.8 8.6 23 3 1.1-.8 2-1.8 2.9-2.8 5.8-7.6 5.8-20.4.1-28-2.8-3.8-7.2-6.2-11.9-6.3-10.8-.6-18.4 7.6-18.4 20.1zM331.6 177c0 15.5.1 31 0 46.5.1 7.1-5.5 13-12.6 13.2-1.2 0-2.5-.1-3.7-.4-5-1.3-8.8-6.6-8.8-12.9v-79.5c0-4.7-.1-9.3 0-14 .1-7.7 5-12.7 12.4-12.7 7.6-.1 12.7 4.9 12.7 12.9.1 15.6 0 31.3 0 46.9z" />
+                <path class="st0"
+                  d="M235.7 196.3c-.1-14.1 7.6-22.6 18.5-22 4.7.2 9.1 2.5 11.9 6.4 5.6 7.5 5.6 20.1 0 27.7-5.4 7.2-15.7 8.7-23 3.3-1.2-.9-2.3-2-3.3-3.3-2.5-3.5-3.9-7.7-4.1-12.1zM365.5 194.5c0-12.4 7.6-20.7 18.4-20.1 4.7.1 9.1 2.5 11.9 6.3 5.7 7.6 5.7 20.5-.1 28-5.6 7.1-16 8.3-23.1 2.7-1.1-.8-2-1.8-2.8-2.9-3-4.1-4.4-9-4.3-14z" />
+                <path class="st3"
+                  d="M66 1h328.1c35.9 0 65 29.1 65 65v303c0 35.9-29.1 65-65 65H66c-35.9 0-65-29.1-65-65V66C1 30.1 30.1 1 66 1z" />
+              </svg>
+              <a href class="flex">
+                <span class="text-left"> Làm đẹp từ gốc </span>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </footer>
+    <a href="https://www.facebook.com/messages/t/251528038040215">
+
+      <div class="fixed bottom-8 right-8 cursor-pointer bg-dark-blue p-4 rounded-full">
+        <!-- You can use an icon or any content for the chatbox icon -->
+        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2.0" stroke="white"
+          class="w-6 h-6 ">
+          <path stroke-linecap="round" stroke-linejoin="round"
+            d="M8.625 12a.375.375 0 1 1-.75 0 .375.375 0 0 1 .75 0Zm0 0H8.25m4.125 0a.375.375 0 1 1-.75 0 .375.375 0 0 1 .75 0Zm0 0H12m4.125 0a.375.375 0 1 1-.75 0 .375.375 0 0 1 .75 0Zm0 0h-.375M21 12c0 4.556-4.03 8.25-9 8.25a9.764 9.764 0 0 1-2.555-.337A5.972 5.972 0 0 1 5.41 20.97a5.969 5.969 0 0 1-.474-.065 4.48 4.48 0 0 0 .978-2.025c.09-.457-.133-.901-.467-1.226C3.93 16.178 3 14.189 3 12c0-4.556 4.03-8.25 9-8.25s9 3.694 9 8.25Z" />
+        </svg>
+
+      </div>
+    </a>
+  </div>
+</body>
+<script>
+  var slideIndex = 1;
+  showDivs(slideIndex);
+
+  function plusDivs(n) {
+    showDivs(slideIndex += n);
+  }
+
+  function showDivs(n) {
+    var i;
+    var x = document.getElementsByClassName("allSlides");
+    if (n > x.length) { slideIndex = 1 }
+    if (n < 1) { slideIndex = x.length }
+    for (i = 0; i < x.length; i++) {
+      x[i].style.display = "none";
+    }
+    x[slideIndex - 1].style.display = "block";
+  }
+</script>
+<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-element-bundle.min.js">
+  // swiper element
+  const swiperEl = document.querySelector('swiper-container');
+
+  // swiper parameters
+  const swiperParams = {
+    virtual: {
+      // virtual slides
+      slides: ['Slide 1', 'Slide 2', 'Slide 3'],
+
+    },
+    spaceBetween: 20,
+
+  };
+
+  // assign all parameters to Swiper element
+  Object.assign(swiperEl, swiperParams);
+
+  // and now initialize it
+  swiperEl.initialize();
+</script>
+
+<!-- emailjs -->
+<!-- Add this script tag to import emailjs library -->
+<script src="https://cdn.emailjs.com/dist/email.min.js"></script>
+
+<script>
+  document.addEventListener("DOMContentLoaded", function () {
+    console.log("DOMContentLoaded event fired");
+    const dangKyForm = document.getElementById("form-dang-ky-ngay");
+    const dangKyButton = document.getElementById("button-dang-ky-ngay");
+
+    dangKyButton.addEventListener("click", function (e) {
+      e.preventDefault();
+
+      const hotenValue = dangKyForm.elements.hoten.value;
+      const emailValue = dangKyForm.elements.email.value;
+      const sdtValue = dangKyForm.elements.sdt.value;
+
+      // Simple form validation
+      if (!hotenValue || !emailValue || !sdtValue) {
+        alert("Vui lòng nhập đủ thông tin.");
+        return; // Stop execution if validation fails
+      }
+
+      // Additional validation for phone number
+      if (!isNumeric(sdtValue) || sdtValue.length !== 10 || sdtValue[0] !== '0') {
+        alert("Số điện thoại không hợp lệ");
+        return;
+      }
+
+      // Additional validation for email
+      if (!isValidEmail(emailValue)) {
+        alert("Email không hợp lệ. Vui lòng kiểm tra lại.");
+        return;
+      }
+
+      // Log all form values
+      console.log("Họ tên:", hotenValue);
+      console.log("Email:", emailValue);
+      console.log("Số điện thoại:", sdtValue);
+
+      // Initialize emailjs with your user ID
+      emailjs.init("ZfTZk7CLCI4LO28EC");
+
+      // Perform additional actions or send the form data using emailjs
+      emailjs.send("service_vop9de5", "template_vhm0e06", {
+        hoten: hotenValue,
+        email: emailValue,
+        sdt: sdtValue,
+      }).then(
+        (response) => {
+          console.log("Sent successfully:", response);
         },
-        spaceBetween: 20,
-      
-      };
-      
-      // assign all parameters to Swiper element
-      Object.assign(swiperEl, swiperParams);
-      
-      // and now initialize it
-      swiperEl.initialize();
-              </script>
-      
-        <!-- emailjs -->
-        <!-- Add this script tag to import emailjs library -->
-        <script src="https://cdn.emailjs.com/dist/email.min.js"></script>
-      
-        <script>
-       document.addEventListener("DOMContentLoaded", function () {
-        console.log("DOMContentLoaded event fired");
-        const dangKyForm = document.getElementById("form-dang-ky-ngay");
-        const dangKyButton = document.getElementById("button-dang-ky-ngay");
-      
-        dangKyButton.addEventListener("click", function (e) {
-          e.preventDefault();
-      
-          const hotenValue = dangKyForm.elements.hoten.value;
-          const emailValue = dangKyForm.elements.email.value;
-          const sdtValue = dangKyForm.elements.sdt.value;
-      
-          // Simple form validation
-          if (!hotenValue || !emailValue || !sdtValue) {
-            alert("Vui lòng nhập đủ thông tin.");
-            return; // Stop execution if validation fails
-          }
-      
-          // Additional validation for phone number
-          if (!isNumeric(sdtValue) || sdtValue.length !== 10 || sdtValue[0]!== '0') {
-            alert("Số điện thoại không hợp lệ");
-            return;
-          }
-      
-          // Additional validation for email
-          if (!isValidEmail(emailValue)) {
-            alert("Email không hợp lệ. Vui lòng kiểm tra lại.");
-            return;
-          }
-      
-          // Log all form values
-          console.log("Họ tên:", hotenValue);
-          console.log("Email:", emailValue);
-          console.log("Số điện thoại:", sdtValue);
-      
-          // Initialize emailjs with your user ID
-          emailjs.init("ZfTZk7CLCI4LO28EC");
-      
-          // Perform additional actions or send the form data using emailjs
-          emailjs.send("service_vop9de5", "template_vhm0e06", {
-            hoten: hotenValue,
-            email: emailValue,
-            sdt: sdtValue,
-          }).then(
-            (response) => {
-              console.log("Sent successfully:", response);
-            },
-            (error) => {
-              console.error("Failed to send:", error);
-            }
-          );
-        });
-      
-        // Function to check if a string contains only numeric characters
-        function isNumeric(value) {
-          return /^\d+$/.test(value);
+        (error) => {
+          console.error("Failed to send:", error);
         }
-      
-        // Function to check if the email has a valid syntax
-        function isValidEmail(email) {
-          // Use a simple regular expression for basic email validation
-          return /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email);
-        }
-      });
-      
-      
-      </script>
+      );
+    });
+
+    // Function to check if a string contains only numeric characters
+    function isNumeric(value) {
+      return /^\d+$/.test(value);
+    }
+
+    // Function to check if the email has a valid syntax
+    function isValidEmail(email) {
+      // Use a simple regular expression for basic email validation
+      return /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email);
+    }
+  });
+
+
+</script>
+
 </html>
