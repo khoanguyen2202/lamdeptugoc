@@ -1,11 +1,10 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
 
-
-
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
-html, body {
+html,
+body {
   margin: 0;
   padding: 0;
   width: 100%;
@@ -37,16 +36,16 @@ html, body {
 }
 
 .ct-footer-icon-text {
-  @apply flex items-start flex-grow 
+  @apply flex items-start flex-grow;
 }
 
-.ct-subheadline{
+.ct-subheadline {
   @apply flex  justify-center items-center mb-4;
 }
-.ct-subheadline-deco-line{
-  @apply w-10 h-px bg-dark-blue ;
+.ct-subheadline-deco-line {
+  @apply w-10 h-px bg-dark-blue;
 }
-.ct-subheadline-label{
+.ct-subheadline-label {
   @apply uppercase mx-4 tracking-widest text-dark-blue font-black text-[17px] text-center text-2xl;
 }
 
@@ -60,27 +59,27 @@ html, body {
 
 /* Style for the validation message */
 .ct-input:invalid + .validation-message::after {
-  content: '✗ Vui lòng điền đầy đủ thông tin.';
+  content: "✗ Vui lòng điền đầy đủ thông tin.";
   color: red;
   margin-left: 5px;
 }
 
 /* Hide validation message initially */
 .validation-message::after {
-  content: ''; /* Empty content initially */
+  content: ""; /* Empty content initially */
   display: inline-block;
 }
 
 .ct-news-img {
-  @apply w-[200px] h-[200px] mr-5  ;
+  @apply w-[200px] h-[200px] mr-5;
 }
 
 .ct-banner-img {
-  @apply w-full h-auto ;
+  @apply w-full h-auto;
 }
 
 .ct-fb-img {
-  @apply lg:w-[300px] lg:h-[300px] lg:rounded-full lg:mr-5 mr-0  rounded-3xl w-[200px] h-[200px] text-center ;
+  @apply lg:w-[300px] lg:h-[300px] lg:rounded-full lg:mr-5 mr-0  rounded-3xl w-[200px] h-[200px] text-center;
 }
 
 .ct-fb-message {
@@ -93,4 +92,20 @@ html, body {
 
 .ct-fb-swiper-slider {
   @apply flex lg:flex-row  flex-col justify-start items-center sm:px-12;
+}
+
+.ct-ndkh-container {
+  @apply border-2 iphone-400px:p-2  mb-16 p-2 text-sm iphone-400px:text-lg;
+}
+
+.ct-ndkh {
+  @apply flex lg:flex-row gap-10  justify-between items-center sm:items-start sm:flex-nowrap flex-wrap;
+}
+
+.ct-ndkh-board {
+  @apply flex flex-col items-start w-[80%] mx-auto;
+}
+
+.ct-ndkh-li-h1 {
+  @apply underline;
 }
