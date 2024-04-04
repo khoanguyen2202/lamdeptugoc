@@ -79,7 +79,7 @@ body {
 }
 
 .ct-fb-img {
-  @apply lg:w-[300px] lg:h-[300px] lg:rounded-full lg:mr-5 mr-0  rounded-3xl w-[200px] h-[200px] text-center;
+  @apply lg:w-[300px] lg:h-[400px] lg:rounded-full lg:mr-5 mr-0  rounded-3xl w-[200px] h-[300px] text-center;
 }
 
 .ct-fb-message {
@@ -109,3 +109,5 @@ body {
 .ct-ndkh-li-h1 {
   @apply underline;
 }
+
+
