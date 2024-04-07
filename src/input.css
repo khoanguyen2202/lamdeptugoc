@@ -107,7 +107,7 @@ body {
 }
 
 .ct-ndkh-li-h1 {
-  @apply underline;
+  @apply font-black
 }
 
 
