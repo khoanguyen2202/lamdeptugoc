@@ -46,7 +46,7 @@ body {
   @apply w-10 h-px bg-dark-blue;
 }
 .ct-subheadline-label {
-  @apply uppercase mx-4 tracking-widest text-dark-blue font-black text-[17px] text-center text-2xl;
+  @apply uppercase mx-4 tracking-widest text-tieu-de font-black text-[17px] text-center text-2xl;
 }
 
 .ct-input {

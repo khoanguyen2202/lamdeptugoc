@@ -10,7 +10,8 @@ module.exports = {
         
       },
       colors:{
-        'dark-blue':'#1d3654'
+        'dark-blue':'#102c6b',
+        'tieu-de':'#000'
         
       },
       keyframes: {
