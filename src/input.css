@@ -107,7 +107,17 @@ body {
 }
 
 .ct-ndkh-li-h1 {
-  @apply font-black
+  @apply font-black;
 }
 
+.ct-video-container {
+  @apply flex lg:flex-row flex-col justify-center items-center lg:gap-4;
+}
 
+.ct-video {
+  @apply lg:w-[400px] lg:h-[300px]  w-[300px] h-[300px] lg:py-12 py-8;
+}
+
+.ct-ndkh-ss {
+  @apply lg:px-20 lg:py-10 py-6;
+}
